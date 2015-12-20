@@ -5,13 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/JKNotificationPanel.svg?style=flat)](http://cocoapods.org/pods/JKNotificationPanel)
 [![Platform](https://img.shields.io/cocoapods/p/JKNotificationPanel.svg?style=flat)](http://cocoapods.org/pods/JKNotificationPanel)
 
+![JKNotificationPanel](https://raw.githubusercontent.com/macfeteria/JKNotificationPanel/master/Screenshot/jknotification_screen.gif)
 
 
 ## Usage
 Using JKNotification panel is very easy.
 
-
-![JKNotificationPanel](https://raw.githubusercontent.com/macfeteria/JKNotificationPanel/master/Screenshot/jknotification_screen.gif)
 ### Basic Usage
 
 First of all you need to create JKNotifictionPanel
@@ -59,12 +58,10 @@ it, simply add the following line to your Podfile:
 pod "JKNotificationPanel"
 ```
 
-## Get started
-
-
 ## Author
 
-Ter, macfeteria@gmail.com
+Ter,
+http://www.macfeteria.com
 
 ## License
 

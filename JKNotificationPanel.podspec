@@ -21,8 +21,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/macfeteria/JKNotificationPanel"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
+  s.screenshots      = "https://raw.githubusercontent.com/macfeteria/JKNotificationPanel/master/Screenshot/jknotification_screen.gif"
   s.author           = { "Ter" => "macfeteria@gmail.com" }
   s.source           = { :git => "https://github.com/macfeteria/JKNotificationPanel.git", :tag => s.version.to_s }
 
