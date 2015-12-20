@@ -3,6 +3,7 @@
 //  JKNotificationPanel
 //
 //  Created by Ter on 12/20/2015.
+//  http://www.macfeteria.com
 //  Copyright (c) 2015 Ter. All rights reserved.
 //
 

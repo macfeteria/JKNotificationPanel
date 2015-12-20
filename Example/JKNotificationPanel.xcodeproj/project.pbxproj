@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3375767B3AA45EBC6D3E6051 /* Pods_JKNotificationPanel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1833DE5958AB7DBC01CAC9B7 /* Pods_JKNotificationPanel_Example.framework */; };
+		4C419B7CC980CDA30AF14994 /* Pods_JKNotificationPanel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69085F21A80D1223D08E36C /* Pods_JKNotificationPanel_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		60A8FB1C7F205DE809171384 /* Pods_JKNotificationPanel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17571EDD8228745980E96F08 /* Pods_JKNotificationPanel_Example.framework */; };
-		E134C75EAF6D86FB3D0D3DF8 /* Pods_JKNotificationPanel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72F24E37EC5A6C7E7901982D /* Pods_JKNotificationPanel_Tests.framework */; };
+		D7D77C011C27003500C3DE17 /* CustomNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D77C001C27003500C3DE17 /* CustomNotificationView.xib */; };
+		D7D77C031C27005500C3DE17 /* JKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D77C021C27005500C3DE17 /* JKViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,25 +29,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17571EDD8228745980E96F08 /* Pods_JKNotificationPanel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FC8273C118E2433BBDF7DBE /* Pods-JKNotificationPanel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		055BA921B000E0FB4F38A02E /* Pods-JKNotificationPanel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0E56E931DBD3305D3FAE094B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		15DBDBCB42B5DAF105CC8117 /* JKNotificationPanel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKNotificationPanel.podspec; path = ../JKNotificationPanel.podspec; sourceTree = "<group>"; };
+		1833DE5958AB7DBC01CAC9B7 /* Pods_JKNotificationPanel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E8548C7F2C7087D46FE97E6 /* Pods-JKNotificationPanel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JKNotificationPanel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKNotificationPanel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = JKNotificationPanel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* JKNotificationPanel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKNotificationPanel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6EE995700B8D4B6CC6AF421D /* Pods-JKNotificationPanel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		72F24E37EC5A6C7E7901982D /* Pods_JKNotificationPanel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86141808830393F1855688BF /* Pods-JKNotificationPanel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8AF7BF715C1339678854884E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C27CA53F2D70D0D938336970 /* Pods-JKNotificationPanel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C47D1BA3A1CD9713C216927A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CA03BDF1880D1F001E061B75 /* JKNotificationPanel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKNotificationPanel.podspec; path = ../JKNotificationPanel.podspec; sourceTree = "<group>"; };
+		6141925D15980D692A1FBB4F /* Pods-JKNotificationPanel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B69085F21A80D1223D08E36C /* Pods_JKNotificationPanel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FEF13A469988D3E929E8D7 /* Pods-JKNotificationPanel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D5004BF8DD1A1222BE345C29 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D7D77C001C27003500C3DE17 /* CustomNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNotificationView.xib; sourceTree = "<group>"; };
+		D7D77C021C27005500C3DE17 /* JKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A8FB1C7F205DE809171384 /* Pods_JKNotificationPanel_Example.framework in Frameworks */,
+				3375767B3AA45EBC6D3E6051 /* Pods_JKNotificationPanel_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,13 +64,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E134C75EAF6D86FB3D0D3DF8 /* Pods_JKNotificationPanel_Tests.framework in Frameworks */,
+				4C419B7CC980CDA30AF14994 /* Pods_JKNotificationPanel_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38278133C2D0688473E0CAA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1833DE5958AB7DBC01CAC9B7 /* Pods_JKNotificationPanel_Example.framework */,
+				B69085F21A80D1223D08E36C /* Pods_JKNotificationPanel_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +87,8 @@
 				607FACD21AFB9204008FA782 /* Example for JKNotificationPanel */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				7346760DF5055EFC0FC70A1D /* Pods */,
-				AEF7F47B94E2298205948901 /* Frameworks */,
+				7C01B39DC284EB991419CA32 /* Pods */,
+				38278133C2D0688473E0CAA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* JKNotificationPanel_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* JKNotificationPanel_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,8 +104,9 @@
 		607FACD21AFB9204008FA782 /* Example for JKNotificationPanel */ = {
 			isa = PBXGroup;
 			children = (
+				D7D77C021C27005500C3DE17 /* JKViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				D7D77C001C27003500C3DE17 /* CustomNotificationView.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -132,31 +144,22 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				CA03BDF1880D1F001E061B75 /* JKNotificationPanel.podspec */,
-				8AF7BF715C1339678854884E /* README.md */,
-				C47D1BA3A1CD9713C216927A /* LICENSE */,
+				15DBDBCB42B5DAF105CC8117 /* JKNotificationPanel.podspec */,
+				0E56E931DBD3305D3FAE094B /* README.md */,
+				D5004BF8DD1A1222BE345C29 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		7346760DF5055EFC0FC70A1D /* Pods */ = {
+		7C01B39DC284EB991419CA32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4FC8273C118E2433BBDF7DBE /* Pods-JKNotificationPanel_Example.debug.xcconfig */,
-				86141808830393F1855688BF /* Pods-JKNotificationPanel_Example.release.xcconfig */,
-				6EE995700B8D4B6CC6AF421D /* Pods-JKNotificationPanel_Tests.debug.xcconfig */,
-				C27CA53F2D70D0D938336970 /* Pods-JKNotificationPanel_Tests.release.xcconfig */,
+				6141925D15980D692A1FBB4F /* Pods-JKNotificationPanel_Example.debug.xcconfig */,
+				055BA921B000E0FB4F38A02E /* Pods-JKNotificationPanel_Example.release.xcconfig */,
+				2E8548C7F2C7087D46FE97E6 /* Pods-JKNotificationPanel_Tests.debug.xcconfig */,
+				D2FEF13A469988D3E929E8D7 /* Pods-JKNotificationPanel_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		AEF7F47B94E2298205948901 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				17571EDD8228745980E96F08 /* Pods_JKNotificationPanel_Example.framework */,
-				72F24E37EC5A6C7E7901982D /* Pods_JKNotificationPanel_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKNotificationPanel_Example" */;
 			buildPhases = (
-				D78FDA2E681BB61673D2B79A /* Check Pods Manifest.lock */,
+				BC14A1D8955DBF07B0D29391 /* Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				83EE4BC8B5DF15AC2D85AF51 /* Embed Pods Frameworks */,
-				AC35C46D2C0D0A0235E66A13 /* Copy Pods Resources */,
+				D647480FA5254A2BCB110444 /* Embed Pods Frameworks */,
+				F90CFD70D709F4D71D1E38B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKNotificationPanel_Tests" */;
 			buildPhases = (
-				BBB4325C2E49A271961319E2 /* Check Pods Manifest.lock */,
+				51B88A7CDDB3D0D64B891F60 /* Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				FD2AB9B959F09FB5DFF2EE41 /* Embed Pods Frameworks */,
-				A6B05BB888504D33F81E244F /* Copy Pods Resources */,
+				346C233CE0804BECBA46DB96 /* Embed Pods Frameworks */,
+				8CDC6E103794C576C46CFC37 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,7 +203,7 @@
 			);
 			name = JKNotificationPanel_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* JKNotificationPanel_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D77C011C27003500C3DE17 /* CustomNotificationView.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -262,82 +266,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		83EE4BC8B5DF15AC2D85AF51 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6B05BB888504D33F81E244F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC35C46D2C0D0A0235E66A13 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BBB4325C2E49A271961319E2 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D78FDA2E681BB61673D2B79A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FD2AB9B959F09FB5DFF2EE41 /* Embed Pods Frameworks */ = {
+		346C233CE0804BECBA46DB96 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,6 +281,81 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		51B88A7CDDB3D0D64B891F60 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CDC6E103794C576C46CFC37 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC14A1D8955DBF07B0D29391 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D647480FA5254A2BCB110444 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90CFD70D709F4D71D1E38B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -359,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				D7D77C031C27005500C3DE17 /* JKViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,7 +489,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FC8273C118E2433BBDF7DBE /* Pods-JKNotificationPanel_Example.debug.xcconfig */;
+			baseConfigurationReference = 6141925D15980D692A1FBB4F /* Pods-JKNotificationPanel_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKNotificationPanel/Info.plist;
@@ -497,7 +501,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86141808830393F1855688BF /* Pods-JKNotificationPanel_Example.release.xcconfig */;
+			baseConfigurationReference = 055BA921B000E0FB4F38A02E /* Pods-JKNotificationPanel_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKNotificationPanel/Info.plist;
@@ -509,7 +513,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EE995700B8D4B6CC6AF421D /* Pods-JKNotificationPanel_Tests.debug.xcconfig */;
+			baseConfigurationReference = 2E8548C7F2C7087D46FE97E6 /* Pods-JKNotificationPanel_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -529,7 +533,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C27CA53F2D70D0D938336970 /* Pods-JKNotificationPanel_Tests.release.xcconfig */;
+			baseConfigurationReference = D2FEF13A469988D3E929E8D7 /* Pods-JKNotificationPanel_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

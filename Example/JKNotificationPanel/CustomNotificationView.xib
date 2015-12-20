@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D9c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhu-2C-wCe" userLabel="Base">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="42"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gba-Wy-Acx">
+                            <rect key="frame" x="42" y="8" width="550" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="43g-OX-46C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-SG-q8v">
+                            <rect key="frame" x="8" y="11" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="IAK-e0-CVS"/>
+                                <constraint firstAttribute="width" constant="20" id="vSd-Vy-ncM"/>
+                            </constraints>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.35615886343689102" green="0.72032831312941359" blue="0.9011017628205128" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ai0-SG-q8v" firstAttribute="leading" secondItem="xhu-2C-wCe" secondAttribute="leading" constant="8" id="H7r-g1-qyv"/>
+                        <constraint firstItem="gba-Wy-Acx" firstAttribute="leading" secondItem="ai0-SG-q8v" secondAttribute="trailing" constant="14" id="Hzb-to-xnC"/>
+                        <constraint firstAttribute="height" constant="42" id="Iig-YX-cA5"/>
+                        <constraint firstItem="gba-Wy-Acx" firstAttribute="top" secondItem="xhu-2C-wCe" secondAttribute="top" constant="8" id="Lo6-Mw-Tjv"/>
+                        <constraint firstItem="ai0-SG-q8v" firstAttribute="top" secondItem="xhu-2C-wCe" secondAttribute="top" constant="11" id="V24-T6-VHP"/>
+                        <constraint firstAttribute="trailing" secondItem="gba-Wy-Acx" secondAttribute="trailing" constant="8" id="aJY-kZ-L5B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xhu-2C-wCe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WD9-8S-NQG"/>
+                <constraint firstItem="xhu-2C-wCe" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="e4A-LI-KG9"/>
+                <constraint firstItem="xhu-2C-wCe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jb6-fW-e3z"/>
+            </constraints>
+            <point key="canvasLocation" x="328" y="354"/>
+        </view>
+    </objects>
+</document>

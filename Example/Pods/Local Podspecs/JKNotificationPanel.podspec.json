@@ -9,7 +9,7 @@
     "Ter": "macfeteria@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/JKNotificationPanel.git",
+    "git": "https://github.com/macfeteria/JKNotificationPanel.git",
     "tag": "0.1.0"
   },
   "platforms": {
