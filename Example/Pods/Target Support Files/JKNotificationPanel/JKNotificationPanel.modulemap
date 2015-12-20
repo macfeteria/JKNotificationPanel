@@ -1,0 +1,6 @@
+framework module JKNotificationPanel {
+  umbrella header "JKNotificationPanel-umbrella.h"
+
+  export *
+  module * { export * }
+}

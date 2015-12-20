@@ -1,0 +1,14 @@
+PODS:
+  - JKNotificationPanel (0.1.0)
+
+DEPENDENCIES:
+  - JKNotificationPanel (from `../`)
+
+EXTERNAL SOURCES:
+  JKNotificationPanel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JKNotificationPanel: 146cb14f51face8a7caff6645a6ea30c28681dd5
+
+COCOAPODS: 0.39.0
