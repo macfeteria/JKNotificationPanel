@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
   s.screenshots      = "https://raw.githubusercontent.com/macfeteria/JKNotificationPanel/master/Screenshot/jknotification_screen.gif"
   s.author           = { "Ter" => "macfeteria@gmail.com" }
   s.source           = { :git => "https://github.com/macfeteria/JKNotificationPanel.git", :tag => s.version.to_s }
+  s.license = 'MIT'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
