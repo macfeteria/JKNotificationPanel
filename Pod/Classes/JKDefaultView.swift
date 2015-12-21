@@ -27,6 +27,7 @@ public class JKDefaultView: UIView {
     var textLabel:UILabel!
     var baseView:UIView!
     
+    
     override init (frame : CGRect) {
         
         super.init(frame : frame)
@@ -45,7 +46,11 @@ public class JKDefaultView: UIView {
         
     }
     
-    func setMessage(text:String?) {
+    public func setColor(color:UIColor) {
+        self.baseView.backgroundColor = color
+    }
+    
+    public func setMessage(text:String?) {
         
         guard (text != nil) else { return }
         
@@ -74,7 +79,7 @@ public class JKDefaultView: UIView {
         return nil
     }
     
-    func setPanelStatus(status:JKType) {
+    public func setPanelStatus(status:JKType) {
         switch (status) {
         case .SUCCESS:
             imageIcon.image = loadImageBundle(named: "success-icon")

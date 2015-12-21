@@ -15,11 +15,11 @@ public class JKNotificationPanel: NSObject {
 
     var view:UIView!
     var tapGesture:UITapGestureRecognizer!
-    var topSpace:CGFloat = 0
+    var verticalSpace:CGFloat = 0
     var inview:UIView!
     
     
-    func defaultView(status:JKType, message:String?) -> JKDefaultView {
+    public func defaultView(status:JKType, message:String?) -> JKDefaultView {
         let height:CGFloat = 42
         let width:CGFloat = UIScreen.mainScreen().bounds.size.width
         
@@ -31,20 +31,20 @@ public class JKNotificationPanel: NSObject {
     }
     
     public func showNotify(withView view: UIView,  belowNavigation navigation: UINavigationController) {
-        topSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
+        verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
         self.showNotify(withView: view, inView: navigation.view)
     }
     
     public func showNotify(withStatus status: JKType, belowNavigation navigation: UINavigationController,message text:String? = nil) {
         
-        topSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
+        verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
         let defaultView = self.defaultView(status,message: text)
         self.showNotify(withView: defaultView, inView: navigation.view)
     }
     
     public func showNotify(withStatus status: JKType, inView view: UIView, message text:String? = nil) {
         
-        topSpace = 0
+        verticalSpace = 0
         let defaultView = self.defaultView(status,message: text)
         self.showNotify(withView: defaultView, inView: view)
     }
@@ -55,7 +55,7 @@ public class JKNotificationPanel: NSObject {
         
         let width = inView.frame.width
         let height = view.frame.height
-        let top = (-height/2.0) + topSpace
+        let top = (-height/2.0) + verticalSpace
         
         self.view = UIView()
         
@@ -75,13 +75,15 @@ public class JKNotificationPanel: NSObject {
         
         let animateExpandSize = {
             self.view.alpha = 1
-            self.view.frame = CGRectMake(0, self.topSpace, width, height + 5)
+            self.view.frame = CGRectMake(0, self.verticalSpace, width, height + 5)
         }
         
         UIView.animateWithDuration(0.2, animations: animateExpandSize ) { (success) -> Void in
             
+            guard (self.view != nil) else { return }
+            
             let animateNormalSize = {
-                self.view.frame = CGRectMake(0, self.topSpace , width, height)
+                self.view.frame = CGRectMake(0, self.verticalSpace , width, height)
             }
             
             let animateNormalSizeDone = { (animateDone:Bool) -> Void in

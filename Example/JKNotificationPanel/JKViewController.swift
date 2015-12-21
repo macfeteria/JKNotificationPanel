@@ -30,6 +30,7 @@ class JKViewController: UIViewController {
         demoList.append("Wait until tap")
         demoList.append("On TableView")
         demoList.append("From top of Navigation")
+        demoList.append("Success with custom color")
         
         let header = self.tableView.dequeueReusableCellWithIdentifier("header")
         header?.textLabel?.text = "JKNotificationPanel"
@@ -86,6 +87,11 @@ class JKViewController: UIViewController {
         case 7:
             let navView = self.navigationController?.view
             panel.showNotify(withStatus: .SUCCESS, inView: navView!)
+        case 8:
+            let view = panel.defaultView(.SUCCESS, message: "Success with custom color")
+            view.setColor(UIColor(red: 67.0/255.0, green: 69.0/255.0, blue: 80.0/255.0, alpha: 1))
+            panel.showNotify(withView: view, belowNavigation: self.navigationController!)
+            
         default: break
         }
     }

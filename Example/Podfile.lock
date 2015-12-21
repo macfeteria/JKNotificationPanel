@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JKNotificationPanel: b82f52fabef00bb25e65ea0beaa116cb34c998de
+  JKNotificationPanel: c1379e8327048f367bc3dd0988df53a3ae05c741
 
 COCOAPODS: 0.39.0
