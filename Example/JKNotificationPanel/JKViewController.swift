@@ -11,7 +11,7 @@ import UIKit
 import JKNotificationPanel
 
 
-class JKViewController: UIViewController {
+class JKViewController: UIViewController,JKNotificationPanelDelegate {
     
     var panel = JKNotificationPanel()
     var defaultView:JKDefaultView?
@@ -31,7 +31,10 @@ class JKViewController: UIViewController {
         demoList.append("On TableView")
         demoList.append("From top of Navigation")
         demoList.append("Success with custom color")
-        
+        demoList.append("Delegate Support")
+        demoList.append("Completion Support")
+        demoList.append("Completion and Alert")
+
         let header = self.tableView.dequeueReusableCellWithIdentifier("header")
         header?.textLabel?.text = "JKNotificationPanel"
         self.tableView.tableHeaderView = header
@@ -56,9 +59,11 @@ class JKViewController: UIViewController {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         // reset to default value
+        
         panel.timeUntilDismiss = 2
         panel.enableTabDismiss = false
-        
+        panel.delegate = nil
+
         switch indexPath.row {
         case 0:
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!)
@@ -91,10 +96,36 @@ class JKViewController: UIViewController {
             let view = panel.defaultView(.SUCCESS, message: "Success with custom color")
             view.setColor(UIColor(red: 67.0/255.0, green: 69.0/255.0, blue: 80.0/255.0, alpha: 1))
             panel.showNotify(withView: view, belowNavigation: self.navigationController!)
+        case 9:
+            panel.delegate = self
+            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Alert after notify done (Delegate style)")
+        case 10:
+            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Alert after notify done (Completion style)", completion: { () -> Void in
+                self.notifyCompleted()
+            })
+
+        case 11:
+            
+            panel.timeUntilDismiss = 0
+            panel.enableTabDismiss = true
+            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert", completion: { () -> Void in
+                let alert = UIAlertController(title: "Hello!!", message: "This is an example of how to work with completion", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: { () -> Void in
+                    self.panel.dismissNotify()
+                })
+            })
             
         default: break
         }
     }
     
+    
+    func notifyCompleted() {
+        let alert = UIAlertView()
+        alert.title = "Nofity Completed"
+        alert.addButtonWithTitle("Ok")
+        alert.show()
+    }
     
 }
