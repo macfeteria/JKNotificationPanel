@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JKNotificationPanel"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Simple, Customizable notification panel"
 
 # This description is used to generate tags and improve search results.

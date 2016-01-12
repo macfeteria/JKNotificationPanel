@@ -54,10 +54,21 @@ panel.showNotify(withView: customView, belowNavigation: self.navigationControlle
 
 ### Tab to dissmiss
 ```Swift
-panel.timeUntilDismiss = 0 // wait forever
+panel.timeUntilDismiss = 0 // zero for wait forever
 panel.enableTabDismiss = true
 panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to dissmiss")
 
+```
+
+
+### User tab action
+```Swift
+panel.timeUntilDismiss = 0 // zero for wait forever
+panel.enableTabDismiss = false
+panel.addPanelDidTabAction() {
+  self.notificationPanelDidTab()
+}
+panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert")
 ```
 
 

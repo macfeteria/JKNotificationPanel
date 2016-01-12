@@ -8,8 +8,11 @@
 
 import UIKit
 
+
+
 public protocol JKNotificationPanelDelegate {
-    func notifyCompleted ()
+    func notificationPanelDidDismiss ()
+    func notificationPanelDidTab()
 }
 
 public class JKNotificationPanel: NSObject {
@@ -18,7 +21,10 @@ public class JKNotificationPanel: NSObject {
     public var timeUntilDismiss:NSTimeInterval = 2
     public var delegate:JKNotificationPanelDelegate!
     
-    var completionHandler:()->Void = { }
+    var tabAction:(()->Void)? = nil
+    var dismissAction:(()->Void)? = nil
+    
+    var completionHandler:()->Void = { }    
     var view:UIView!
     var tapGesture:UITapGestureRecognizer!
     var verticalSpace:CGFloat = 0
@@ -37,35 +43,40 @@ public class JKNotificationPanel: NSObject {
     }
 
     
+    public func addPanelDidTabAction(action:()->Void ) {
+        tabAction = action
+    }
+    
+    public func addPanelDidDissmissAction(action:()->Void ) {
+        dismissAction  = action
+    }
+    
+    
     public func showNotify(withStatus status: JKType,
-        belowNavigation navigation: UINavigationController, message text:String? = nil , completion handler:(()->Void)? = nil) {
+        belowNavigation navigation: UINavigationController, message text:String? = nil) {
         
         verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
         let defaultView = self.defaultView(status,message: text)
-        self.showNotify(withView: defaultView, inView: navigation.view,completion:  handler)
+        self.showNotify(withView: defaultView, inView: navigation.view)
     }
     
-    public func showNotify(withStatus status: JKType, inView view: UIView, message text:String? = nil , completion handler:(()->Void)? = nil) {
+    public func showNotify(withStatus status: JKType, inView view: UIView, message text:String? = nil) {
         
         verticalSpace = 0
         let defaultView = self.defaultView(status,message: text)
-        self.showNotify(withView: defaultView, inView: view,completion:  handler)
+        self.showNotify(withView: defaultView, inView: view)
     }
     
     
     
     public func showNotify(withView view: UIView,  belowNavigation navigation: UINavigationController , completion handler:(()->Void)? = nil) {
         verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
-        self.showNotify(withView: view, inView: navigation.view ,completion:  handler)
+        self.showNotify(withView: view, inView: navigation.view )
     }
     
-    public func showNotify(withView view: UIView,inView: UIView, completion handler:(()->Void)? = nil ) {
+    public func showNotify(withView view: UIView,inView: UIView) {
         
         reset()
-        
-        if handler != nil {
-            completionHandler = handler!
-        }
         
         let width = inView.frame.width
         let height = view.frame.height
@@ -73,10 +84,8 @@ public class JKNotificationPanel: NSObject {
         
         self.view = UIView()
         
-        if self.enableTabDismiss == true {
-            self.tapGesture = UITapGestureRecognizer(target: self, action: "dismissNotify")
-            self.view.addGestureRecognizer(tapGesture)
-        }
+        self.tapGesture = UITapGestureRecognizer(target: self, action: "tabHandler")
+        self.view.addGestureRecognizer(tapGesture)
         
         self.view.alpha = 0
         self.view.frame = CGRectMake(0, top , width, height)
@@ -123,15 +132,25 @@ public class JKNotificationPanel: NSObject {
     }
     
     
+    func tabHandler () {
+        if  enableTabDismiss ==   true {
+            self.dismissNotify()
+        }
+        
+        if let delegate = self.delegate {
+            delegate.notificationPanelDidTab()
+        } else if let userTabAction = tabAction {
+            userTabAction()
+        }
+        
+    }
+    
     func reset() {
         if let view = self.view {
-            if let tab = self.tapGesture  {
-                view.removeGestureRecognizer(tab)
-            }
+            view.removeGestureRecognizer(self.tapGesture )
             view.removeFromSuperview()
             self.view = nil
         }
-        
     }
     
     
@@ -154,17 +173,14 @@ public class JKNotificationPanel: NSObject {
     
     public func dismissNotify() {
         if let view = self.view {
-            if let tab = self.tapGesture  {
-                view.removeGestureRecognizer(tab)
-            }
+            view.removeGestureRecognizer(self.tapGesture )
             view.removeFromSuperview()
             self.view = nil
             
-            
             if let delegate = self.delegate {
-                delegate.notifyCompleted()
-            } else {
-                completionHandler()
+                delegate.notificationPanelDidDismiss()
+            } else if let userDismissAction = dismissAction {
+                userDismissAction()
             }
 
         }
