@@ -61,16 +61,22 @@ panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationControlle
 ```
 
 
+### Delegate
+```Swift
+func notificationPanelDidDismiss ()
+func notificationPanelDidTab()
+```
+
 ### User tab action
+If you don't want to use delegate you can also use tab action instead. 
 ```Swift
 panel.timeUntilDismiss = 0 // zero for wait forever
 panel.enableTabDismiss = false
 panel.addPanelDidTabAction() {
-  self.notificationPanelDidTab()
+self.notificationPanelDidTab()
 }
 panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert")
 ```
-
 
 ## Author
 
