@@ -12,7 +12,7 @@ Simple, Customizable notification panel
 ## Requirements
 
 - Swift 2.1
-- XCode 6
+- Xcode 6
 - iOS 8.0 or above
 
 ## Installation
