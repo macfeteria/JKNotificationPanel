@@ -46,6 +46,11 @@ public class JKDefaultView: UIView {
         
     }
     
+    public func setImage(icon:UIImage) {
+        imageIcon.image = icon
+    }
+    
+    
     public func setColor(color:UIColor) {
         self.baseView.backgroundColor = color
     }
@@ -58,6 +63,7 @@ public class JKDefaultView: UIView {
         textLabel.text = text
         textLabel.numberOfLines = 0
         textLabel.sizeToFit()
+        textLabel.frame.origin.y = textLabel.frame.origin.y + 2
         
         let height = textLabel.frame.height
         var frameHeight = (VERTICAL_SPACE * 2) + height
