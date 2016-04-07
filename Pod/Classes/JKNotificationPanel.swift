@@ -43,7 +43,7 @@ public class JKNotificationPanel: NSObject {
             jkview.transitionTosize(size)
         }
         
-        if let navBar = self.navigationBar , view = self.view {
+        if let _ = self.navigationBar , view = self.view {
             verticalSpace = size.height < size.width ? 32 : 52
             view.frame = CGRectMake(0, self.verticalSpace, view.frame.width, view.frame.height)
         }
