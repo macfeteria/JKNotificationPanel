@@ -43,7 +43,7 @@ public class JKNotificationPanel: NSObject {
             jkview.transitionTosize(size)
         }
         
-        if let _ = self.navigationBar , view = self.view {
+        if self.navigationBar != nil , let view = self.view {
             verticalSpace = size.height < size.width ? 32 : 52
             view.frame = CGRectMake(0, self.verticalSpace, view.frame.width, view.frame.height)
         }
@@ -53,7 +53,6 @@ public class JKNotificationPanel: NSObject {
     public func defaultView(status:JKType, message:String?) -> JKDefaultView {
         let height:CGFloat = defaultViewHeight
         let width:CGFloat = UIScreen.mainScreen().bounds.size.width
-        let screenHeight = UIScreen.mainScreen().bounds.size.height
         
         let view = JKDefaultView(frame: CGRectMake(0, 0, width, height))
         view.setPanelStatus(status)
