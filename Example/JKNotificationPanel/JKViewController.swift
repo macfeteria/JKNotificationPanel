@@ -23,7 +23,7 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         self.title = "JK Demo"
         
         demoList.append("Success")
-        demoList.append("Custom color")
+        demoList.append("Success with Custom color")
         demoList.append("Warning")
         demoList.append("Failed")
         demoList.append("Long text")
@@ -33,6 +33,7 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         demoList.append("On Navigation")
         demoList.append("Delegate")
         demoList.append("Completion and Alert")
+        demoList.append("Success with custom Image and Text")
         
         let header = self.tableView.dequeueReusableCellWithIdentifier("header")
         header?.textLabel?.text = "JKNotificationPanel"
@@ -40,11 +41,13 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // Support oritation
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        self.panel.transitionToSize(size)
     }
     
+
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return demoList.count
     }
@@ -64,40 +67,62 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         panel.delegate = nil
         
         switch indexPath.row {
+            
+        // Success
         case 0:
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!)
+        
+        // Custom color
         case 1:
-            let view = panel.defaultView(.SUCCESS, message: "Success with custom color")
+            let view = panel.defaultView(.SUCCESS, message: nil)
             view.setColor(UIColor(red: 67.0/255.0, green: 69.0/255.0, blue: 80.0/255.0, alpha: 1))
             panel.showNotify(withView: view, belowNavigation: self.navigationController!)
+           
+        // Warning
         case 2:
             panel.showNotify(withStatus: .WARNING, belowNavigation: self.navigationController!)
+        
+        // Failed
         case 3:
             panel.showNotify(withStatus: .FAILED, belowNavigation: self.navigationController!)
+        
+        // Long Text
         case 4:
             let longtext = "Guus Hiddink meeting the Chelsea players after the game."
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: longtext)
+        
+        // Custom View
         case 5:
             let nib = UINib(nibName: "CustomNotificationView", bundle: NSBundle(forClass: self.dynamicType))
             let customView  = nib.instantiateWithOwner(nil, options: nil).first as! UIView
             let width:CGFloat = UIScreen.mainScreen().bounds.size.width
-            customView.frame = CGRectMake(0, 0, width, 20)
+            customView.frame = CGRectMake(0, 0, width, 42)
             panel.showNotify(withView: customView, belowNavigation: self.navigationController!)
+        
+        // Wait until tap
         case 6:
             panel.timeUntilDismiss = 0 // zero for wait forever
             panel.enableTabDismiss = true
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to dissmiss")
+        
+        // On the top of table view
         case 7:
             let text = "The Panel display on the top of the table, pull the table to see the result and tap the panel to dismiss"
             panel.timeUntilDismiss = 0
             panel.enableTabDismiss = true
             panel.showNotify(withStatus: .WARNING, inView:self.tableView, message: text)
+        
+        // On navigation
         case 8:
             let navView = self.navigationController?.view
             panel.showNotify(withStatus: .SUCCESS, inView: navView!)
+        
+        // Delegate
         case 9:
             panel.delegate = self
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Alert after notifying done (Delegate style)")
+        
+        // Completion block
         case 10:
             
             panel.timeUntilDismiss = 0
@@ -106,6 +131,12 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
                 self.notificationPanelDidTab()
             }
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert")
+
+        // Custom Image
+        case 11:
+            let view = panel.defaultView(.SUCCESS, message: "Success panel with custom Image and text")
+            view.setImage(UIImage(named: "airplane-icon")!)
+            panel.showNotify(withView: view, belowNavigation: self.navigationController!)
             
         default: break
         }

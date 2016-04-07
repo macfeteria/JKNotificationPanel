@@ -31,6 +31,7 @@ public class JKDefaultView: UIView {
     override init (frame : CGRect) {
         
         super.init(frame : frame)
+
         imageIcon = UIImageView(frame: CGRectMake(VERTICAL_SPACE, HORIZONTAL_SPACE, ICON_WIDTH, ICON_HEIGHT))
         imageIcon.backgroundColor = UIColor.clearColor()
         
@@ -43,7 +44,17 @@ public class JKDefaultView: UIView {
         baseView.addSubview(imageIcon)
         baseView.addSubview(textLabel)
         self.addSubview(baseView)
+
+    }
+    
+    public func transitionTosize(size:CGSize) {
+        let xPosition = VERTICAL_SPACE + ICON_WIDTH + VERTICAL_SPACE
+        self.frame.size = CGSize(width: size.width, height: self.frame.height)
+        textLabel.frame.size = CGSize(width: size.width - xPosition - HORIZONTAL_SPACE, height: 26)
+        baseView.frame.size = CGSize(width: size.width, height: baseView.frame.height)
         
+        // adjust text label
+        self.setMessage(textLabel.text)
     }
     
     public func setImage(icon:UIImage) {
@@ -63,7 +74,8 @@ public class JKDefaultView: UIView {
         textLabel.text = text
         textLabel.numberOfLines = 0
         textLabel.sizeToFit()
-        textLabel.frame.origin.y = textLabel.frame.origin.y + 2
+        
+        textLabel.frame.origin.y = HORIZONTAL_SPACE + 2
         
         let height = textLabel.frame.height
         var frameHeight = (VERTICAL_SPACE * 2) + height
@@ -71,6 +83,7 @@ public class JKDefaultView: UIView {
         
         self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.width, frameHeight)
         baseView.frame = self.frame
+        
     }
     
     

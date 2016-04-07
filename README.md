@@ -77,7 +77,15 @@ self.notificationPanelDidTab()
 }
 panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert")
 ```
+### Orientation
+JKNotificationPanel support orientation. Just call method 'transitionToSize' in ViewController
+```Swift
+func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
 
+jkPanel.transitionToSize(size)
+
+}
+```
 ## Author
 
 Ter,
