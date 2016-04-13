@@ -52,10 +52,10 @@ customView.frame = CGRectMake(0, 0, width, 20)
 panel.showNotify(withView: customView, belowNavigation: self.navigationController!)
 ```
 
-### Tab to dissmiss
+### Tap to dissmiss
 ```Swift
 panel.timeUntilDismiss = 0 // zero for wait forever
-panel.enableTabDismiss = true
+panel.enableTapDismiss = true
 panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to dissmiss")
 
 ```
@@ -64,18 +64,18 @@ panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationControlle
 ### Delegate
 ```Swift
 func notificationPanelDidDismiss ()
-func notificationPanelDidTab()
+func notificationPanelDidTap()
 ```
 
-### User tab action
-If you don't want to use delegate you can also use tab action instead. 
+### User tap action
+If you don't want to use delegate you can also use tap action instead. 
 ```Swift
 panel.timeUntilDismiss = 0 // zero for wait forever
-panel.enableTabDismiss = false
-panel.addPanelDidTabAction() {
-self.notificationPanelDidTab()
+panel.enableTapDismiss = false
+panel.addPanelDidTapAction() {
+self.notificationPanelDidTap()
 }
-panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert")
+panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to show alert")
 ```
 ### Orientation
 JKNotificationPanel support orientation. Just call method 'transitionToSize' in ViewController

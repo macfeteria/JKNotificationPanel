@@ -63,7 +63,7 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         // reset to default value
         
         panel.timeUntilDismiss = 2
-        panel.enableTabDismiss = false
+        panel.enableTapDismiss = false
         panel.delegate = nil
         
         switch indexPath.row {
@@ -102,14 +102,14 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         // Wait until tap
         case 6:
             panel.timeUntilDismiss = 0 // zero for wait forever
-            panel.enableTabDismiss = true
+            panel.enableTapDismiss = true
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to dissmiss")
         
         // On the top of table view
         case 7:
             let text = "The Panel display on the top of the table, pull the table to see the result and tap the panel to dismiss"
             panel.timeUntilDismiss = 0
-            panel.enableTabDismiss = true
+            panel.enableTapDismiss = true
             panel.showNotify(withStatus: .WARNING, inView:self.tableView, message: text)
         
         // On navigation
@@ -126,9 +126,9 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         case 10:
             
             panel.timeUntilDismiss = 0
-            panel.enableTabDismiss = false
-            panel.addPanelDidTabAction() {
-                self.notificationPanelDidTab()
+            panel.enableTapDismiss = false
+            panel.addPanelDidTapAction() {
+                self.notificationPanelDidTap()
             }
             panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert")
 
@@ -144,10 +144,14 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
     
     // Delegate
     
-    func notificationPanelDidTab() {
+    func notificationPanelDidTap() {
         let alert = UIAlertController(title: "Hello!!", message: "This is an example of how to work with completion block.", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
-            self.panel.dismissNotify()
+            
+            // Since alertview take 0.2 to dismiss, therefor fade animate must
+            // longer than 0.2
+            
+            self.panel.dismissNotify(0.4)
         }))
         
         self.presentViewController(alert, animated: true, completion: nil)

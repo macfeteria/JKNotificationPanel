@@ -11,18 +11,18 @@ import UIKit
 
 public protocol JKNotificationPanelDelegate {
     func notificationPanelDidDismiss ()
-    func notificationPanelDidTab()
+    func notificationPanelDidTap()
 }
 
 public class JKNotificationPanel: NSObject {
     
     let defaultViewHeight:CGFloat = 42.0
 
-    public var enableTabDismiss = true
+    public var enableTapDismiss = true
     public var timeUntilDismiss:NSTimeInterval = 2
     public var delegate:JKNotificationPanelDelegate!
     
-    var tabAction:(()->Void)? = nil
+    var tapAction:(()->Void)? = nil
     var dismissAction:(()->Void)? = nil
     
     var completionHandler:()->Void = { }    
@@ -62,8 +62,8 @@ public class JKNotificationPanel: NSObject {
     }
 
     
-    public func addPanelDidTabAction(action:()->Void ) {
-        tabAction = action
+    public func addPanelDidTapAction(action:()->Void ) {
+        tapAction = action
     }
     
     public func addPanelDidDissmissAction(action:()->Void ) {
@@ -106,7 +106,7 @@ public class JKNotificationPanel: NSObject {
         
         self.view = UIView()
         
-        self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(JKNotificationPanel.tabHandler))
+        self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(JKNotificationPanel.tapHandler))
         self.view.addGestureRecognizer(tapGesture)
         
         self.view.alpha = 1
@@ -143,7 +143,7 @@ public class JKNotificationPanel: NSObject {
                     
                     let prepareFadeComplete = { (animateDone:Bool) -> Void in
                         if animateDone == true {
-                            self.animateFade()
+                            self.animateFade(0.2)
                         }
                     }
                     
@@ -157,15 +157,15 @@ public class JKNotificationPanel: NSObject {
     }
     
     
-    func tabHandler () {
-        if  enableTabDismiss ==   true {
+    func tapHandler () {
+        if  enableTapDismiss ==   true {
             self.dismissNotify()
         }
         
         if let delegate = self.delegate {
-            delegate.notificationPanelDidTab()
-        } else if let userTabAction = tabAction {
-            userTabAction()
+            delegate.notificationPanelDidTap()
+        } else if let userTapAction = tapAction {
+            userTapAction()
         }
         
     }
@@ -180,7 +180,7 @@ public class JKNotificationPanel: NSObject {
     }
     
     
-    func animateFade() {
+    func animateFade(duration:NSTimeInterval) {
         guard (self.view != nil) else {return}
         var frame = self.view.frame
         frame.size.height = -10
@@ -191,13 +191,13 @@ public class JKNotificationPanel: NSObject {
         }
         
         let fadeComplete = { (success:Bool) -> Void in
-            self.dismissNotify()
+            self.removePanelFromSuperView()
         }
         
-        UIView.animateWithDuration(0.2, animations: fade, completion: fadeComplete)
+        UIView.animateWithDuration(duration, animations: fade, completion: fadeComplete)
     }
     
-    public func dismissNotify() {
+    func removePanelFromSuperView() {
         if let view = self.view {
             view.removeGestureRecognizer(self.tapGesture )
             view.removeFromSuperview()
@@ -209,9 +209,16 @@ public class JKNotificationPanel: NSObject {
             } else if let userDismissAction = dismissAction {
                 userDismissAction()
             }
-
         }
-
+    }
+    
+    public func dismissNotify(fadeDuration:NSTimeInterval = 0.2) {
+        if fadeDuration == 0 {
+            removePanelFromSuperView()
+        }
+        else {
+            animateFade(fadeDuration)
+        }
     }
     
 }
