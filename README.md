@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/JKNotificationPanel.svg?style=flat)](http://cocoapods.org/pods/JKNotificationPanel)
 [![Platform](https://img.shields.io/cocoapods/p/JKNotificationPanel.svg?style=flat)](http://cocoapods.org/pods/JKNotificationPanel)
 
-Simple, Customizable notification panel
+Simple, Customizable notification panel, 
 
 ![JKNotificationPanel](https://raw.githubusercontent.com/macfeteria/JKNotificationPanel/master/Screenshot/jknotification_screen.gif)
 
@@ -80,11 +80,16 @@ panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationControlle
 ### Orientation
 JKNotificationPanel support orientation. Just call method 'transitionToSize' in ViewController
 ```Swift
-func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
 
-jkPanel.transitionToSize(size)
+coordinator.animateAlongsideTransition({ (context) in
 
+jkpanel.transitionToSize(self.view.frame.size)
+
+}, completion: nil)
 }
+
 ```
 ## Author
 
