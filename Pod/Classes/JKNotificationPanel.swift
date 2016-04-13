@@ -43,18 +43,25 @@ public class JKNotificationPanel: NSObject {
             jkview.transitionTosize(size)
         }
         
-        if self.navigationBar != nil , let view = self.view {
-            verticalSpace = size.height < size.width ? 32 : 52
+        if let navBar  = self.navigationBar , let view = self.view {
+            var navHeight = navBar.frame.height + UIApplication.sharedApplication().statusBarFrame.size.height
+            verticalSpace = navHeight
             view.frame = CGRectMake(0, self.verticalSpace, view.frame.width, view.frame.height)
         }
     }
     
     
-    public func defaultView(status:JKType, message:String?) -> JKDefaultView {
-        let height:CGFloat = defaultViewHeight
-        let width:CGFloat = UIScreen.mainScreen().bounds.size.width
+    public func defaultView(status:JKType, message:String?, size:CGSize? = nil) -> JKDefaultView {
         
-        let view = JKDefaultView(frame: CGRectMake(0, 0, width, height))
+        var height:CGFloat = defaultViewHeight
+        var width:CGFloat = UIScreen.mainScreen().bounds.size.width
+        
+        if let size = size {
+            height = size.height
+            width = size.width
+        }
+        
+        let view = JKDefaultView(frame: CGRectMake(0, 0, width,  height))
         view.setPanelStatus(status)
         view.setMessage(message)
         
@@ -74,14 +81,16 @@ public class JKNotificationPanel: NSObject {
     public func showNotify(withStatus status: JKType, belowNavigation navigation: UINavigationController, message text:String? = nil) {
         navigationBar = navigation.navigationBar
         verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
-        let defaultView = self.defaultView(status,message: text)
+        let panelSize = CGSize(width: navigation.navigationBar.frame.size.width, height: defaultViewHeight)
+        let defaultView = self.defaultView(status,message: text,size: panelSize)
         self.showNotify(withView: defaultView, inView: navigation.view)
     }
     
     public func showNotify(withStatus status: JKType, inView view: UIView, message text:String? = nil) {
         
         verticalSpace = 0
-        let defaultView = self.defaultView(status,message: text)
+        let panelSize = CGSize(width: view.frame.size.width, height: defaultViewHeight)
+        let defaultView = self.defaultView(status,message: text,size: panelSize)
         self.showNotify(withView: defaultView, inView: view)
     }
     

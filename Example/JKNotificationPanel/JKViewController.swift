@@ -43,7 +43,11 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
     
     // Support oritation
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        self.panel.transitionToSize(size)
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        
+        coordinator.animateAlongsideTransition({ (context) in
+            self.panel.transitionToSize(self.view.frame.size)
+            }, completion: nil)
     }
     
 
