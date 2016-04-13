@@ -44,7 +44,7 @@ public class JKNotificationPanel: NSObject {
         }
         
         if let navBar  = self.navigationBar , let view = self.view {
-            var navHeight = navBar.frame.height + UIApplication.sharedApplication().statusBarFrame.size.height
+            let navHeight = navBar.frame.height + UIApplication.sharedApplication().statusBarFrame.size.height
             verticalSpace = navHeight
             view.frame = CGRectMake(0, self.verticalSpace, view.frame.width, view.frame.height)
         }
