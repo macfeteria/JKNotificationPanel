@@ -1,6 +1,6 @@
 {
   "name": "JKNotificationPanel",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "summary": "Simple, Customizable notification panel",
   "description": "JKNotificationPanel lets you create a simple notification panel that display on the top of the view/navigation or below.",
   "homepage": "https://github.com/macfeteria/JKNotificationPanel",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/macfeteria/JKNotificationPanel.git",
-    "tag": "0.1.0"
+    "tag": "0.1.4"
   },
   "license": "MIT",
   "platforms": {

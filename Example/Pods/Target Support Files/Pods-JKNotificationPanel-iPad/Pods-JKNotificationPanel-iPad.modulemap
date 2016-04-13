@@ -1,0 +1,6 @@
+framework module Pods_JKNotificationPanel_iPad {
+  umbrella header "Pods-JKNotificationPanel-iPad-umbrella.h"
+
+  export *
+  module * { export * }
+}

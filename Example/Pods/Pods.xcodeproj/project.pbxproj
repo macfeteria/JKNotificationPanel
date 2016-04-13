@@ -1,839 +1,2367 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		03BA29BE562E49C03314A41EECB2F2B3 /* warning-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C976A1F29883C445D0AD3FFFC4C4E1 /* warning-icon@3x.png */; };
-		149E4F573702046E6945A88330688EC8 /* warning-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32F509BB6CFF36B825D778184F7C2A4F /* warning-icon@2x.png */; };
-		19877B93FA70E7E4D71F69420DCF1031 /* Pods-JKNotificationPanel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB8B54836A0954668CB761177C6462D /* Pods-JKNotificationPanel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C45671BE1F78449C29BBEA6C0CFD74F /* JKNotificationPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0395FB0BBAE86C78D04B17F27C3B7B /* JKNotificationPanel.swift */; };
-		3C460AB9DE145D2D85281B25FB34135D /* JKNotificationPanel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34815E326B0ABC307D49B690C7287DCA /* JKNotificationPanel.bundle */; };
-		4130A1475F865E06A891061CACEBD6B3 /* success-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0817606C9EEE539FBB0F3D252C6B69 /* success-icon@2x.png */; };
-		42377897C7F87B56A176CE6AA4F209B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		45D5D85E34281743FB48B263C41362C5 /* fail-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 233EFA50A39DC2EBB76941AF4C9B43BF /* fail-icon@2x.png */; };
-		58A59102613254142245631F8E6EDE2C /* JKNotificationPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 363D15B3F1CF9511E02FEF20D9D059BC /* JKNotificationPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58FD931706711A4394373E41F880E687 /* JKNotificationPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8287018E884D1A4044D60D67AD3DDEE /* JKNotificationPanel-dummy.m */; };
-		5F06825B3BF9CE082EDD9E5DBCBB2D23 /* Pods-JKNotificationPanel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA59F71F5E9A474263945E282B0808A /* Pods-JKNotificationPanel_Example-dummy.m */; };
-		68FA98F55AB65BCE0CE9D19A24C0C84A /* Pods-JKNotificationPanel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D97613D18F1CD25E66D9E5BA31929E /* Pods-JKNotificationPanel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7368599820ABE0EC9CB7BC14FF6477C7 /* Pods-JKNotificationPanel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4076393C245329A6A16086DD003A05 /* Pods-JKNotificationPanel_Tests-dummy.m */; };
-		7EFD6EE4212133C5A477C96AF7218656 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		882CA21738242BF16719C9C4367951D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8EA85570A4257E5914DA899100016145 /* fail-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2C902BBFBD41DD9F70C1A5B885CC953 /* fail-icon@3x.png */; };
-		C5D614E9B00551336A503F456744C629 /* JKDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FBB252A40C8067005AECCBA9F7933 /* JKDefaultView.swift */; };
-		CD4E6CFCE5624B44C0718FAEAD00746E /* success-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E8FB9C22833DBADB996C1B3D09307FB3 /* success-icon@3x.png */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		32588D724AF75EEB388D2A33C8EB3A5A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4CC6F2F8B05C829F4CFB396F307FC46;
-			remoteInfo = JKNotificationPanel;
-		};
-		534161C1200CF4F1FE5A6A92BC3432FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 00B8A327E8F71BAA52712EC7363D13CA;
-			remoteInfo = "JKNotificationPanel-JKNotificationPanel";
-		};
-		B039F106D8230DE1B0F3E5E45FA900F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4CC6F2F8B05C829F4CFB396F307FC46;
-			remoteInfo = JKNotificationPanel;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		06C976A1F29883C445D0AD3FFFC4C4E1 /* warning-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "warning-icon@3x.png"; sourceTree = "<group>"; };
-		2198D767A573474CE32FCC4E18D109C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		233EFA50A39DC2EBB76941AF4C9B43BF /* fail-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "fail-icon@2x.png"; sourceTree = "<group>"; };
-		2B045BDCD4287DDC5FE39EE86374C8DC /* Pods-JKNotificationPanel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKNotificationPanel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2CA61EBCB145532CF126A01532D83822 /* Pods-JKNotificationPanel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKNotificationPanel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		32F509BB6CFF36B825D778184F7C2A4F /* warning-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "warning-icon@2x.png"; sourceTree = "<group>"; };
-		343D532E37B14A5EC3067BFB052FDB2D /* Pods-JKNotificationPanel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKNotificationPanel_Tests-resources.sh"; sourceTree = "<group>"; };
-		34815E326B0ABC307D49B690C7287DCA /* JKNotificationPanel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKNotificationPanel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		363D15B3F1CF9511E02FEF20D9D059BC /* JKNotificationPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKNotificationPanel-umbrella.h"; sourceTree = "<group>"; };
-		3A0395FB0BBAE86C78D04B17F27C3B7B /* JKNotificationPanel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JKNotificationPanel.swift; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		413A959EB121BA8F8D8DC805602FF7A3 /* Pods-JKNotificationPanel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNotificationPanel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		42A839EB1628397D16C8635AB8CF1A52 /* Pods-JKNotificationPanel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKNotificationPanel_Example-resources.sh"; sourceTree = "<group>"; };
-		583B511F97A735F226D64152F0934F22 /* Pods-JKNotificationPanel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKNotificationPanel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		58EA85215754DE9DE4CC8325908DC941 /* JKNotificationPanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKNotificationPanel.xcconfig; sourceTree = "<group>"; };
-		5D0817606C9EEE539FBB0F3D252C6B69 /* success-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "success-icon@2x.png"; sourceTree = "<group>"; };
-		5F2FA1EF91FB81373064766BCD8816DF /* Pods_JKNotificationPanel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F4076393C245329A6A16086DD003A05 /* Pods-JKNotificationPanel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKNotificationPanel_Tests-dummy.m"; sourceTree = "<group>"; };
-		63195D81C6D72F0D9B53B0AD877324F7 /* JKNotificationPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JKNotificationPanel.modulemap; sourceTree = "<group>"; };
-		6AB8B54836A0954668CB761177C6462D /* Pods-JKNotificationPanel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKNotificationPanel_Tests-umbrella.h"; sourceTree = "<group>"; };
-		73A1E69EC3C14B02D35784F8E0F751DE /* Pods-JKNotificationPanel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNotificationPanel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7D8EFD14F37BC7AAC270AA58EAFC8156 /* Pods-JKNotificationPanel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKNotificationPanel_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		837687D057392B0EA62F53E4DE271B59 /* Pods-JKNotificationPanel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKNotificationPanel_Tests.modulemap"; sourceTree = "<group>"; };
-		8CEBA5EC812C6F9078F63B923180B554 /* Pods-JKNotificationPanel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNotificationPanel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		939DCF5BA4B1614F55FD2ACE2AFA1B21 /* Pods-JKNotificationPanel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNotificationPanel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		96D97613D18F1CD25E66D9E5BA31929E /* Pods-JKNotificationPanel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKNotificationPanel_Example-umbrella.h"; sourceTree = "<group>"; };
-		9B6439D1D8E97C3B7D36FE27623CC714 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFB9401D8C94BA06C20B4C65513F5EEE /* JKNotificationPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKNotificationPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0F9069837251423D119009F61DD420A /* Pods-JKNotificationPanel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKNotificationPanel_Example.modulemap"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C2C902BBFBD41DD9F70C1A5B885CC953 /* fail-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "fail-icon@3x.png"; sourceTree = "<group>"; };
-		C8287018E884D1A4044D60D67AD3DDEE /* JKNotificationPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKNotificationPanel-dummy.m"; sourceTree = "<group>"; };
-		CAA59F71F5E9A474263945E282B0808A /* Pods-JKNotificationPanel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKNotificationPanel_Example-dummy.m"; sourceTree = "<group>"; };
-		D10D68A4B10D35A58D10543CDEA1EE65 /* Pods-JKNotificationPanel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKNotificationPanel_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D319701529DA568EAB5DE43958470D25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D366156C10CEA93D6C26DF0ECD14C34A /* Pods_JKNotificationPanel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10EC0822EC356558D4A7EDD451BF0C9 /* Pods-JKNotificationPanel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKNotificationPanel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E8FB9C22833DBADB996C1B3D09307FB3 /* success-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "success-icon@3x.png"; sourceTree = "<group>"; };
-		E9E81D8690F0874042CBEBBA24585843 /* JKNotificationPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKNotificationPanel-prefix.pch"; sourceTree = "<group>"; };
-		EA9FBB252A40C8067005AECCBA9F7933 /* JKDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JKDefaultView.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2431F3723D4A906C2E42FA40C113C0B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7EFD6EE4212133C5A477C96AF7218656 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		59B62C81FFF90FC467917D2774B4C901 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		991049A7CF024CBDA20E8D9A144784D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42377897C7F87B56A176CE6AA4F209B1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F470CC3C539977F6CD9B53784079BED6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				882CA21738242BF16719C9C4367951D7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		09FA61DC9E293847C8A8E6A30504ED89 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EA9FBB252A40C8067005AECCBA9F7933 /* JKDefaultView.swift */,
-				3A0395FB0BBAE86C78D04B17F27C3B7B /* JKNotificationPanel.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		1A81855E6314237D5D980DF678E665B7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				34815E326B0ABC307D49B690C7287DCA /* JKNotificationPanel.bundle */,
-				AFB9401D8C94BA06C20B4C65513F5EEE /* JKNotificationPanel.framework */,
-				5F2FA1EF91FB81373064766BCD8816DF /* Pods_JKNotificationPanel_Example.framework */,
-				D366156C10CEA93D6C26DF0ECD14C34A /* Pods_JKNotificationPanel_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2396146C0E99040BA1A7A715DBA8A4ED /* JKNotificationPanel */ = {
-			isa = PBXGroup;
-			children = (
-				E71A73F910ECE5F80E9A7F89B1EA2219 /* Pod */,
-				78AC0BE81FC66AAE2D03709325356EB2 /* Resources */,
-				DDA974030A3A38BD08FD8433F21ED580 /* Support Files */,
-			);
-			name = JKNotificationPanel;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		2F6CC5F89EAF47BE14CBEF6C40B40ECB /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				74DBB4845C0A5B586E5513D19AC44A7B /* Pods-JKNotificationPanel_Example */,
-				B1A8AF3F48B29BF7CAD7AC611E9708BF /* Pods-JKNotificationPanel_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		47F24BBB9405EB927573C8ED703ABCDB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2396146C0E99040BA1A7A715DBA8A4ED /* JKNotificationPanel */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5A05DF790735C6B143A438F37CCC9FCE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B7B73EFD98B56F81BAB589EE9523A8FE /* Assets */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		74DBB4845C0A5B586E5513D19AC44A7B /* Pods-JKNotificationPanel_Example */ = {
-			isa = PBXGroup;
-			children = (
-				2198D767A573474CE32FCC4E18D109C0 /* Info.plist */,
-				B0F9069837251423D119009F61DD420A /* Pods-JKNotificationPanel_Example.modulemap */,
-				583B511F97A735F226D64152F0934F22 /* Pods-JKNotificationPanel_Example-acknowledgements.markdown */,
-				2CA61EBCB145532CF126A01532D83822 /* Pods-JKNotificationPanel_Example-acknowledgements.plist */,
-				CAA59F71F5E9A474263945E282B0808A /* Pods-JKNotificationPanel_Example-dummy.m */,
-				D10D68A4B10D35A58D10543CDEA1EE65 /* Pods-JKNotificationPanel_Example-frameworks.sh */,
-				42A839EB1628397D16C8635AB8CF1A52 /* Pods-JKNotificationPanel_Example-resources.sh */,
-				96D97613D18F1CD25E66D9E5BA31929E /* Pods-JKNotificationPanel_Example-umbrella.h */,
-				413A959EB121BA8F8D8DC805602FF7A3 /* Pods-JKNotificationPanel_Example.debug.xcconfig */,
-				939DCF5BA4B1614F55FD2ACE2AFA1B21 /* Pods-JKNotificationPanel_Example.release.xcconfig */,
-			);
-			name = "Pods-JKNotificationPanel_Example";
-			path = "Target Support Files/Pods-JKNotificationPanel_Example";
-			sourceTree = "<group>";
-		};
-		78AC0BE81FC66AAE2D03709325356EB2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5A05DF790735C6B143A438F37CCC9FCE /* Pod */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				47F24BBB9405EB927573C8ED703ABCDB /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1A81855E6314237D5D980DF678E665B7 /* Products */,
-				2F6CC5F89EAF47BE14CBEF6C40B40ECB /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		B1A8AF3F48B29BF7CAD7AC611E9708BF /* Pods-JKNotificationPanel_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				9B6439D1D8E97C3B7D36FE27623CC714 /* Info.plist */,
-				837687D057392B0EA62F53E4DE271B59 /* Pods-JKNotificationPanel_Tests.modulemap */,
-				2B045BDCD4287DDC5FE39EE86374C8DC /* Pods-JKNotificationPanel_Tests-acknowledgements.markdown */,
-				E10EC0822EC356558D4A7EDD451BF0C9 /* Pods-JKNotificationPanel_Tests-acknowledgements.plist */,
-				5F4076393C245329A6A16086DD003A05 /* Pods-JKNotificationPanel_Tests-dummy.m */,
-				7D8EFD14F37BC7AAC270AA58EAFC8156 /* Pods-JKNotificationPanel_Tests-frameworks.sh */,
-				343D532E37B14A5EC3067BFB052FDB2D /* Pods-JKNotificationPanel_Tests-resources.sh */,
-				6AB8B54836A0954668CB761177C6462D /* Pods-JKNotificationPanel_Tests-umbrella.h */,
-				73A1E69EC3C14B02D35784F8E0F751DE /* Pods-JKNotificationPanel_Tests.debug.xcconfig */,
-				8CEBA5EC812C6F9078F63B923180B554 /* Pods-JKNotificationPanel_Tests.release.xcconfig */,
-			);
-			name = "Pods-JKNotificationPanel_Tests";
-			path = "Target Support Files/Pods-JKNotificationPanel_Tests";
-			sourceTree = "<group>";
-		};
-		B7B73EFD98B56F81BAB589EE9523A8FE /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				233EFA50A39DC2EBB76941AF4C9B43BF /* fail-icon@2x.png */,
-				C2C902BBFBD41DD9F70C1A5B885CC953 /* fail-icon@3x.png */,
-				5D0817606C9EEE539FBB0F3D252C6B69 /* success-icon@2x.png */,
-				E8FB9C22833DBADB996C1B3D09307FB3 /* success-icon@3x.png */,
-				32F509BB6CFF36B825D778184F7C2A4F /* warning-icon@2x.png */,
-				06C976A1F29883C445D0AD3FFFC4C4E1 /* warning-icon@3x.png */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DDA974030A3A38BD08FD8433F21ED580 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D319701529DA568EAB5DE43958470D25 /* Info.plist */,
-				63195D81C6D72F0D9B53B0AD877324F7 /* JKNotificationPanel.modulemap */,
-				58EA85215754DE9DE4CC8325908DC941 /* JKNotificationPanel.xcconfig */,
-				C8287018E884D1A4044D60D67AD3DDEE /* JKNotificationPanel-dummy.m */,
-				E9E81D8690F0874042CBEBBA24585843 /* JKNotificationPanel-prefix.pch */,
-				363D15B3F1CF9511E02FEF20D9D059BC /* JKNotificationPanel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JKNotificationPanel";
-			sourceTree = "<group>";
-		};
-		E71A73F910ECE5F80E9A7F89B1EA2219 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				09FA61DC9E293847C8A8E6A30504ED89 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		1979F1FF9C30664CDBD6E7018A810A32 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68FA98F55AB65BCE0CE9D19A24C0C84A /* Pods-JKNotificationPanel_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AAA66A4198FCAE1A69B4AD6E5EA10AA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19877B93FA70E7E4D71F69420DCF1031 /* Pods-JKNotificationPanel_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B7AD7B1AD23ADE190CD8E292A998EABA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58A59102613254142245631F8E6EDE2C /* JKNotificationPanel-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		00B8A327E8F71BAA52712EC7363D13CA /* JKNotificationPanel-JKNotificationPanel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 358E0B5FF11F7EC52B82692FF4F95DD2 /* Build configuration list for PBXNativeTarget "JKNotificationPanel-JKNotificationPanel" */;
-			buildPhases = (
-				B9233493F4081708F390DDF599E35E00 /* Sources */,
-				59B62C81FFF90FC467917D2774B4C901 /* Frameworks */,
-				6DB300509E05E27DC33FA205209C34B6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "JKNotificationPanel-JKNotificationPanel";
-			productName = "JKNotificationPanel-JKNotificationPanel";
-			productReference = 34815E326B0ABC307D49B690C7287DCA /* JKNotificationPanel.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		5F5B467AC204C13542F520A85C4B4CCD /* Pods-JKNotificationPanel_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDE479A152DFBF7CB3D76349753CD0A2 /* Build configuration list for PBXNativeTarget "Pods-JKNotificationPanel_Tests" */;
-			buildPhases = (
-				D10900AB2F56B7B309817F0311CBACFA /* Sources */,
-				2431F3723D4A906C2E42FA40C113C0B1 /* Frameworks */,
-				2AAA66A4198FCAE1A69B4AD6E5EA10AA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2439D47862F8BB3B013911C7EF4E2CDE /* PBXTargetDependency */,
-			);
-			name = "Pods-JKNotificationPanel_Tests";
-			productName = "Pods-JKNotificationPanel_Tests";
-			productReference = D366156C10CEA93D6C26DF0ECD14C34A /* Pods_JKNotificationPanel_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A4CC6F2F8B05C829F4CFB396F307FC46 /* JKNotificationPanel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5091847BB9D28AA0525AE8A5D3901EF /* Build configuration list for PBXNativeTarget "JKNotificationPanel" */;
-			buildPhases = (
-				DB45BD656E17ADA0ACADF93F0658C3A0 /* Sources */,
-				F470CC3C539977F6CD9B53784079BED6 /* Frameworks */,
-				085A4A32939A2212A464D7B6187C39C6 /* Resources */,
-				B7AD7B1AD23ADE190CD8E292A998EABA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0374B1A63AF29209CA42949B3CED7331 /* PBXTargetDependency */,
-			);
-			name = JKNotificationPanel;
-			productName = JKNotificationPanel;
-			productReference = AFB9401D8C94BA06C20B4C65513F5EEE /* JKNotificationPanel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B8673523B7E84EBBA17E3B7B343DEEB6 /* Pods-JKNotificationPanel_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F7BF27B78F9BC906CECA4B36C149D70 /* Build configuration list for PBXNativeTarget "Pods-JKNotificationPanel_Example" */;
-			buildPhases = (
-				723403EB23C677E42AE5FFABB2C58379 /* Sources */,
-				991049A7CF024CBDA20E8D9A144784D4 /* Frameworks */,
-				1979F1FF9C30664CDBD6E7018A810A32 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E96F4DBD244B614965EC0A4BBCFBA0D /* PBXTargetDependency */,
-			);
-			name = "Pods-JKNotificationPanel_Example";
-			productName = "Pods-JKNotificationPanel_Example";
-			productReference = 5F2FA1EF91FB81373064766BCD8816DF /* Pods_JKNotificationPanel_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0730;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1A81855E6314237D5D980DF678E665B7 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				A4CC6F2F8B05C829F4CFB396F307FC46 /* JKNotificationPanel */,
-				00B8A327E8F71BAA52712EC7363D13CA /* JKNotificationPanel-JKNotificationPanel */,
-				B8673523B7E84EBBA17E3B7B343DEEB6 /* Pods-JKNotificationPanel_Example */,
-				5F5B467AC204C13542F520A85C4B4CCD /* Pods-JKNotificationPanel_Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		085A4A32939A2212A464D7B6187C39C6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C460AB9DE145D2D85281B25FB34135D /* JKNotificationPanel.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DB300509E05E27DC33FA205209C34B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45D5D85E34281743FB48B263C41362C5 /* fail-icon@2x.png in Resources */,
-				8EA85570A4257E5914DA899100016145 /* fail-icon@3x.png in Resources */,
-				4130A1475F865E06A891061CACEBD6B3 /* success-icon@2x.png in Resources */,
-				CD4E6CFCE5624B44C0718FAEAD00746E /* success-icon@3x.png in Resources */,
-				149E4F573702046E6945A88330688EC8 /* warning-icon@2x.png in Resources */,
-				03BA29BE562E49C03314A41EECB2F2B3 /* warning-icon@3x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		723403EB23C677E42AE5FFABB2C58379 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F06825B3BF9CE082EDD9E5DBCBB2D23 /* Pods-JKNotificationPanel_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B9233493F4081708F390DDF599E35E00 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D10900AB2F56B7B309817F0311CBACFA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7368599820ABE0EC9CB7BC14FF6477C7 /* Pods-JKNotificationPanel_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB45BD656E17ADA0ACADF93F0658C3A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5D614E9B00551336A503F456744C629 /* JKDefaultView.swift in Sources */,
-				58FD931706711A4394373E41F880E687 /* JKNotificationPanel-dummy.m in Sources */,
-				3C45671BE1F78449C29BBEA6C0CFD74F /* JKNotificationPanel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0374B1A63AF29209CA42949B3CED7331 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "JKNotificationPanel-JKNotificationPanel";
-			target = 00B8A327E8F71BAA52712EC7363D13CA /* JKNotificationPanel-JKNotificationPanel */;
-			targetProxy = 534161C1200CF4F1FE5A6A92BC3432FC /* PBXContainerItemProxy */;
-		};
-		2439D47862F8BB3B013911C7EF4E2CDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JKNotificationPanel;
-			target = A4CC6F2F8B05C829F4CFB396F307FC46 /* JKNotificationPanel */;
-			targetProxy = B039F106D8230DE1B0F3E5E45FA900F3 /* PBXContainerItemProxy */;
-		};
-		7E96F4DBD244B614965EC0A4BBCFBA0D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JKNotificationPanel;
-			target = A4CC6F2F8B05C829F4CFB396F307FC46 /* JKNotificationPanel */;
-			targetProxy = 32588D724AF75EEB388D2A33C8EB3A5A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		11A0010EB466F32DA9D584997489D428 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 413A959EB121BA8F8D8DC805602FF7A3 /* Pods-JKNotificationPanel_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JKNotificationPanel_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JKNotificationPanel_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		162920C599BBD273C1A31F090B6CB46F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58EA85215754DE9DE4CC8325908DC941 /* JKNotificationPanel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JKNotificationPanel/JKNotificationPanel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JKNotificationPanel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JKNotificationPanel/JKNotificationPanel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = JKNotificationPanel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1B7AE20A4C0A545923E22E47D51FA0C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58EA85215754DE9DE4CC8325908DC941 /* JKNotificationPanel.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = JKNotificationPanel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		3DD2AF97C5B600A257E0FF8CDE08D0AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CEBA5EC812C6F9078F63B923180B554 /* Pods-JKNotificationPanel_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JKNotificationPanel_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JKNotificationPanel_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4A62D541B06456C627448A7269A1F024 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58EA85215754DE9DE4CC8325908DC941 /* JKNotificationPanel.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = JKNotificationPanel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		9A52EA26F55E0734A81E1489249C4E3B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 939DCF5BA4B1614F55FD2ACE2AFA1B21 /* Pods-JKNotificationPanel_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JKNotificationPanel_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JKNotificationPanel_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A20A949FF7B910EAA8ADC15B426CDB27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73A1E69EC3C14B02D35784F8E0F751DE /* Pods-JKNotificationPanel_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JKNotificationPanel_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JKNotificationPanel_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BD78D10ED25DDA0DC1DB257449231B99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58EA85215754DE9DE4CC8325908DC941 /* JKNotificationPanel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JKNotificationPanel/JKNotificationPanel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JKNotificationPanel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JKNotificationPanel/JKNotificationPanel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = JKNotificationPanel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		358E0B5FF11F7EC52B82692FF4F95DD2 /* Build configuration list for PBXNativeTarget "JKNotificationPanel-JKNotificationPanel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4A62D541B06456C627448A7269A1F024 /* Debug */,
-				1B7AE20A4C0A545923E22E47D51FA0C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8F7BF27B78F9BC906CECA4B36C149D70 /* Build configuration list for PBXNativeTarget "Pods-JKNotificationPanel_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11A0010EB466F32DA9D584997489D428 /* Debug */,
-				9A52EA26F55E0734A81E1489249C4E3B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5091847BB9D28AA0525AE8A5D3901EF /* Build configuration list for PBXNativeTarget "JKNotificationPanel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BD78D10ED25DDA0DC1DB257449231B99 /* Debug */,
-				162920C599BBD273C1A31F090B6CB46F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EDE479A152DFBF7CB3D76349753CD0A2 /* Build configuration list for PBXNativeTarget "Pods-JKNotificationPanel_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A20A949FF7B910EAA8ADC15B426CDB27 /* Debug */,
-				3DD2AF97C5B600A257E0FF8CDE08D0AD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>00B8A327E8F71BAA52712EC7363D13CA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>358E0B5FF11F7EC52B82692FF4F95DD2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B9233493F4081708F390DDF599E35E00</string>
+				<string>59B62C81FFF90FC467917D2774B4C901</string>
+				<string>6DB300509E05E27DC33FA205209C34B6</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>JKNotificationPanel-JKNotificationPanel</string>
+			<key>productName</key>
+			<string>JKNotificationPanel-JKNotificationPanel</string>
+			<key>productReference</key>
+			<string>9EA56636B95AE1E6350CCB84BE08B7A0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>0374B1A63AF29209CA42949B3CED7331</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>JKNotificationPanel-JKNotificationPanel</string>
+			<key>target</key>
+			<string>00B8A327E8F71BAA52712EC7363D13CA</string>
+			<key>targetProxy</key>
+			<string>534161C1200CF4F1FE5A6A92BC3432FC</string>
+		</dict>
+		<key>03BA29BE562E49C03314A41EECB2F2B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>06C976A1F29883C445D0AD3FFFC4C4E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0575C5A50007F4EDB188DCF90B3B2229</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_JKNotificationPanel_iPhone.framework</string>
+			<key>path</key>
+			<string>Pods_JKNotificationPanel_iPhone.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>06C976A1F29883C445D0AD3FFFC4C4E1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>warning-icon@3x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08363090BA654EC8696FFB2CD0484DBF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>085A4A32939A2212A464D7B6187C39C6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3C460AB9DE145D2D85281B25FB34135D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09FA61DC9E293847C8A8E6A30504ED89</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EA9FBB252A40C8067005AECCBA9F7933</string>
+				<string>3A0395FB0BBAE86C78D04B17F27C3B7B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>128047F98816306713D6F39AA56D6B62</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>47A6CA11B887FD44C05B8B9BE3AB6C7C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1339C9FFD6DD665023AEB8CF0A91C6C1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>149E4F573702046E6945A88330688EC8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32F509BB6CFF36B825D778184F7C2A4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162920C599BBD273C1A31F090B6CB46F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>58EA85215754DE9DE4CC8325908DC941</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/JKNotificationPanel/JKNotificationPanel-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/JKNotificationPanel/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/JKNotificationPanel/JKNotificationPanel.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>JKNotificationPanel</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>19877B93FA70E7E4D71F69420DCF1031</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2E18CF78EEAD76C71B3515EB8A2BCBC0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1B7AE20A4C0A545923E22E47D51FA0C9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>58EA85215754DE9DE4CC8325908DC941</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>JKNotificationPanel</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1C7D22A74D1A23CA3DFCFA2FE51B22C6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8EF646D3B892C0B9C1674F3BD46D78AA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1E8547917279E77B80125CB96B9608FA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C74BC36E71C54783A9DB1B0F14FC6BB2</string>
+				<string>79DB27C5F22E9A6C4AF6079827CD61C3</string>
+				<string>35EF01AE090CE009999F45CD009A6A83</string>
+				<string>A03F34EC01A5AE289DEDE8C8885A4C2F</string>
+				<string>1F8CB26FB6511AED131C6F16BF676E3C</string>
+				<string>92A19DE652E0338153555A28DEBF46EA</string>
+				<string>08363090BA654EC8696FFB2CD0484DBF</string>
+				<string>2E18CF78EEAD76C71B3515EB8A2BCBC0</string>
+				<string>57904E6A3F631F113DCB043AD1BB671F</string>
+				<string>1339C9FFD6DD665023AEB8CF0A91C6C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-JKNotificationPanel_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-JKNotificationPanel_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F8CB26FB6511AED131C6F16BF676E3C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>224AD4144E74AC364C6150C1E138D280</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>233EFA50A39DC2EBB76941AF4C9B43BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>fail-icon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2396146C0E99040BA1A7A715DBA8A4ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E71A73F910ECE5F80E9A7F89B1EA2219</string>
+				<string>78AC0BE81FC66AAE2D03709325356EB2</string>
+				<string>DDA974030A3A38BD08FD8433F21ED580</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>JKNotificationPanel</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2431F3723D4A906C2E42FA40C113C0B1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7EFD6EE4212133C5A477C96AF7218656</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2439D47862F8BB3B013911C7EF4E2CDE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>JKNotificationPanel</string>
+			<key>target</key>
+			<string>A4CC6F2F8B05C829F4CFB396F307FC46</string>
+			<key>targetProxy</key>
+			<string>B039F106D8230DE1B0F3E5E45FA900F3</string>
+		</dict>
+		<key>2AAA66A4198FCAE1A69B4AD6E5EA10AA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>19877B93FA70E7E4D71F69420DCF1031</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>552D02D5BA751AC2E8790D2811D496CA</string>
+				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2E18CF78EEAD76C71B3515EB8A2BCBC0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3179C14DCD29E38F314CBD193B6AB531</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>63147E55DF38C6AB90D9B7BDBB20D3EC</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPhone/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPhone/Pods-JKNotificationPanel-iPhone.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JKNotificationPanel_iPhone</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>32F509BB6CFF36B825D778184F7C2A4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>warning-icon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>358E0B5FF11F7EC52B82692FF4F95DD2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4A62D541B06456C627448A7269A1F024</string>
+				<string>1B7AE20A4C0A545923E22E47D51FA0C9</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>35EF01AE090CE009999F45CD009A6A83</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>363D15B3F1CF9511E02FEF20D9D059BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>JKNotificationPanel-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3A0395FB0BBAE86C78D04B17F27C3B7B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>JKNotificationPanel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3AA796B8F6A55E5240814D39DE8677B1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A4CC6F2F8B05C829F4CFB396F307FC46</string>
+			<key>remoteInfo</key>
+			<string>JKNotificationPanel</string>
+		</dict>
+		<key>3C45671BE1F78449C29BBEA6C0CFD74F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3A0395FB0BBAE86C78D04B17F27C3B7B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3C460AB9DE145D2D85281B25FB34135D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9EA56636B95AE1E6350CCB84BE08B7A0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D7687DBC60C80E8CAA1139E6D6D358A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>EAF7306DDDFD628F4CFD2C17562339BE</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1C7D22A74D1A23CA3DFCFA2FE51B22C6</string>
+				<string>E8246FDD2889F61A41E783C022881A3D</string>
+				<string>E82B434704C0C1D99D251F2220DD0398</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>ADCA8203FBDAE7C221458B58867F68CC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-JKNotificationPanel-iPhone</string>
+			<key>productName</key>
+			<string>Pods-JKNotificationPanel-iPhone</string>
+			<key>productReference</key>
+			<string>0575C5A50007F4EDB188DCF90B3B2229</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>3DD2AF97C5B600A257E0FF8CDE08D0AD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1339C9FFD6DD665023AEB8CF0A91C6C1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JKNotificationPanel_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>4130A1475F865E06A891061CACEBD6B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5D0817606C9EEE539FBB0F3D252C6B69</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>45D5D85E34281743FB48B263C41362C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>233EFA50A39DC2EBB76941AF4C9B43BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>466AD3A75F645C04453C74336BA19C89</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>46854D0113BEC249BDF1E72D3D0D50F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47A6CA11B887FD44C05B8B9BE3AB6C7C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB215EC78E9C9D582BA610442CD1B27A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>47F24BBB9405EB927573C8ED703ABCDB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2396146C0E99040BA1A7A715DBA8A4ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4A62D541B06456C627448A7269A1F024</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>58EA85215754DE9DE4CC8325908DC941</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>JKNotificationPanel</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4DF73ACC85C4612DC68B07D333082A68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4EE0D84989E6637C055FE5170A885FC1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_JKNotificationPanel_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_JKNotificationPanel_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4F49EB8D9BD44B709CD1BE2ED99E70DB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>534161C1200CF4F1FE5A6A92BC3432FC</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>00B8A327E8F71BAA52712EC7363D13CA</string>
+			<key>remoteInfo</key>
+			<string>JKNotificationPanel-JKNotificationPanel</string>
+		</dict>
+		<key>547A20F2E30F5E2BE12A056A67428E8C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54FDCDB61AB8A55E16FA005BE1417F2E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>552D02D5BA751AC2E8790D2811D496CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>57904E6A3F631F113DCB043AD1BB671F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>581CF8C6991138309CBBAFA774874740</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58A59102613254142245631F8E6EDE2C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>363D15B3F1CF9511E02FEF20D9D059BC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>58EA85215754DE9DE4CC8325908DC941</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>JKNotificationPanel.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58FD931706711A4394373E41F880E687</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C8287018E884D1A4044D60D67AD3DDEE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>59B62C81FFF90FC467917D2774B4C901</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5A05DF790735C6B143A438F37CCC9FCE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B7B73EFD98B56F81BAB589EE9523A8FE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5D0817606C9EEE539FBB0F3D252C6B69</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>success-icon@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E61174F4E59067169453E440126DE24</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>224AD4144E74AC364C6150C1E138D280</string>
+				<string>D83DDF63FDC8A33C5ED93B887736113C</string>
+				<string>466AD3A75F645C04453C74336BA19C89</string>
+				<string>BB5400E33C73CE6D010AA8146D92AE1C</string>
+				<string>CB215EC78E9C9D582BA610442CD1B27A</string>
+				<string>581CF8C6991138309CBBAFA774874740</string>
+				<string>4F49EB8D9BD44B709CD1BE2ED99E70DB</string>
+				<string>8147422634105D7523037F69EF6A4239</string>
+				<string>54FDCDB61AB8A55E16FA005BE1417F2E</string>
+				<string>F8DE4A56615687CE9759375FEF372987</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-JKNotificationPanel-iPad</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-JKNotificationPanel-iPad</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F5B467AC204C13542F520A85C4B4CCD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>EDE479A152DFBF7CB3D76349753CD0A2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D10900AB2F56B7B309817F0311CBACFA</string>
+				<string>2431F3723D4A906C2E42FA40C113C0B1</string>
+				<string>2AAA66A4198FCAE1A69B4AD6E5EA10AA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2439D47862F8BB3B013911C7EF4E2CDE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-JKNotificationPanel_Tests</string>
+			<key>productName</key>
+			<string>Pods-JKNotificationPanel_Tests</string>
+			<key>productReference</key>
+			<string>4EE0D84989E6637C055FE5170A885FC1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>63147E55DF38C6AB90D9B7BDBB20D3EC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63195D81C6D72F0D9B53B0AD877324F7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>JKNotificationPanel.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63BDC30F35EA05BD2876D1D229F70FC3</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>JKNotificationPanel.framework</string>
+			<key>path</key>
+			<string>JKNotificationPanel.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6DB300509E05E27DC33FA205209C34B6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>45D5D85E34281743FB48B263C41362C5</string>
+				<string>8EA85570A4257E5914DA899100016145</string>
+				<string>4130A1475F865E06A891061CACEBD6B3</string>
+				<string>CD4E6CFCE5624B44C0718FAEAD00746E</string>
+				<string>149E4F573702046E6945A88330688EC8</string>
+				<string>03BA29BE562E49C03314A41EECB2F2B3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7368599820ABE0EC9CB7BC14FF6477C7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1F8CB26FB6511AED131C6F16BF676E3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>78AC0BE81FC66AAE2D03709325356EB2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5A05DF790735C6B143A438F37CCC9FCE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79DB27C5F22E9A6C4AF6079827CD61C3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>47F24BBB9405EB927573C8ED703ABCDB</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>BB32201704F7451840E07B1561ACC0A5</string>
+				<string>9719A6FE35A664A6FEE6C8EF460731B6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EFD6EE4212133C5A477C96AF7218656</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8147422634105D7523037F69EF6A4239</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84292767ECF5E6E53AD90D089DE0130A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84EB2BF0260230DE45AE9C7535CF1AA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8147422634105D7523037F69EF6A4239</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>882CA21738242BF16719C9C4367951D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8B2411B79D39272D196429629C7A23C5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D10B29BE28EE9CACC6A530849616118</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8EA85570A4257E5914DA899100016145</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C2C902BBFBD41DD9F70C1A5B885CC953</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8EF646D3B892C0B9C1674F3BD46D78AA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F6E9A8B97990BCBDD4EF6248C58092FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>92A19DE652E0338153555A28DEBF46EA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9352F0D663C5C15FBD866CF015B9E71B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96037C1CA4BCDA3FF4D464B39156C4FE</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>BAA9FDEC78F0BC793F386931E145F778</string>
+				<string>E3A77DD8B09C63E122FCA411262D3674</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9719A6FE35A664A6FEE6C8EF460731B6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5E61174F4E59067169453E440126DE24</string>
+				<string>FA00C9F66662C42C78430514A5B2BF2A</string>
+				<string>1E8547917279E77B80125CB96B9608FA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9EA56636B95AE1E6350CCB84BE08B7A0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>JKNotificationPanel.bundle</string>
+			<key>path</key>
+			<string>JKNotificationPanel.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A03F34EC01A5AE289DEDE8C8885A4C2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A20A949FF7B910EAA8ADC15B426CDB27</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>57904E6A3F631F113DCB043AD1BB671F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JKNotificationPanel_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A4CC6F2F8B05C829F4CFB396F307FC46</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D5091847BB9D28AA0525AE8A5D3901EF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DB45BD656E17ADA0ACADF93F0658C3A0</string>
+				<string>F470CC3C539977F6CD9B53784079BED6</string>
+				<string>085A4A32939A2212A464D7B6187C39C6</string>
+				<string>B7AD7B1AD23ADE190CD8E292A998EABA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>0374B1A63AF29209CA42949B3CED7331</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>JKNotificationPanel</string>
+			<key>productName</key>
+			<string>JKNotificationPanel</string>
+			<key>productReference</key>
+			<string>63BDC30F35EA05BD2876D1D229F70FC3</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>A9DFF69C6F71C1E763968AD96B6C1E6F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>96037C1CA4BCDA3FF4D464B39156C4FE</string>
+			<key>buildPhases</key>
+			<array>
+				<string>128047F98816306713D6F39AA56D6B62</string>
+				<string>E7713856DA03A5F7787D92F9C578D67D</string>
+				<string>FD7671D77407889180194330F5BA6FBE</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D74C9361E31B6E81D381C29380AC7187</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-JKNotificationPanel-iPad</string>
+			<key>productName</key>
+			<string>Pods-JKNotificationPanel-iPad</string>
+			<key>productReference</key>
+			<string>F77281FAE0BB8EBC165DA419E1F0B2E1</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>ADCA8203FBDAE7C221458B58867F68CC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>JKNotificationPanel</string>
+			<key>target</key>
+			<string>A4CC6F2F8B05C829F4CFB396F307FC46</string>
+			<key>targetProxy</key>
+			<string>D9556E69DFBA22F63251D24B285FAB3E</string>
+		</dict>
+		<key>B039F106D8230DE1B0F3E5E45FA900F3</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A4CC6F2F8B05C829F4CFB396F307FC46</string>
+			<key>remoteInfo</key>
+			<string>JKNotificationPanel</string>
+		</dict>
+		<key>B7AD7B1AD23ADE190CD8E292A998EABA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>58A59102613254142245631F8E6EDE2C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B7B73EFD98B56F81BAB589EE9523A8FE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>233EFA50A39DC2EBB76941AF4C9B43BF</string>
+				<string>C2C902BBFBD41DD9F70C1A5B885CC953</string>
+				<string>5D0817606C9EEE539FBB0F3D252C6B69</string>
+				<string>E8FB9C22833DBADB996C1B3D09307FB3</string>
+				<string>32F509BB6CFF36B825D778184F7C2A4F</string>
+				<string>06C976A1F29883C445D0AD3FFFC4C4E1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Assets</string>
+			<key>path</key>
+			<string>Assets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9233493F4081708F390DDF599E35E00</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BAA9FDEC78F0BC793F386931E145F778</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>54FDCDB61AB8A55E16FA005BE1417F2E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPad/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPad/Pods-JKNotificationPanel-iPad.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JKNotificationPanel_iPad</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>BB32201704F7451840E07B1561ACC0A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9EA56636B95AE1E6350CCB84BE08B7A0</string>
+				<string>63BDC30F35EA05BD2876D1D229F70FC3</string>
+				<string>F77281FAE0BB8EBC165DA419E1F0B2E1</string>
+				<string>0575C5A50007F4EDB188DCF90B3B2229</string>
+				<string>4EE0D84989E6637C055FE5170A885FC1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB5400E33C73CE6D010AA8146D92AE1C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BD78D10ED25DDA0DC1DB257449231B99</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>58EA85215754DE9DE4CC8325908DC941</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/JKNotificationPanel/JKNotificationPanel-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/JKNotificationPanel/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/JKNotificationPanel/JKNotificationPanel.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>JKNotificationPanel</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>BEF53A4F49811876CC87E62C95C29490</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2C902BBFBD41DD9F70C1A5B885CC953</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>fail-icon@3x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5D614E9B00551336A503F456744C629</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EA9FBB252A40C8067005AECCBA9F7933</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C74BC36E71C54783A9DB1B0F14FC6BB2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C8287018E884D1A4044D60D67AD3DDEE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>JKNotificationPanel-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB215EC78E9C9D582BA610442CD1B27A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD4E6CFCE5624B44C0718FAEAD00746E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8FB9C22833DBADB996C1B3D09307FB3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D10900AB2F56B7B309817F0311CBACFA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7368599820ABE0EC9CB7BC14FF6477C7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D319701529DA568EAB5DE43958470D25</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>BB32201704F7451840E07B1561ACC0A5</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>A4CC6F2F8B05C829F4CFB396F307FC46</string>
+				<string>00B8A327E8F71BAA52712EC7363D13CA</string>
+				<string>A9DFF69C6F71C1E763968AD96B6C1E6F</string>
+				<string>3D7687DBC60C80E8CAA1139E6D6D358A</string>
+				<string>5F5B467AC204C13542F520A85C4B4CCD</string>
+			</array>
+		</dict>
+		<key>D5091847BB9D28AA0525AE8A5D3901EF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>BD78D10ED25DDA0DC1DB257449231B99</string>
+				<string>162920C599BBD273C1A31F090B6CB46F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D74C9361E31B6E81D381C29380AC7187</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>JKNotificationPanel</string>
+			<key>target</key>
+			<string>A4CC6F2F8B05C829F4CFB396F307FC46</string>
+			<key>targetProxy</key>
+			<string>3AA796B8F6A55E5240814D39DE8677B1</string>
+		</dict>
+		<key>D83DDF63FDC8A33C5ED93B887736113C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D9556E69DFBA22F63251D24B285FAB3E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A4CC6F2F8B05C829F4CFB396F307FC46</string>
+			<key>remoteInfo</key>
+			<string>JKNotificationPanel</string>
+		</dict>
+		<key>DB45BD656E17ADA0ACADF93F0658C3A0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C5D614E9B00551336A503F456744C629</string>
+				<string>58FD931706711A4394373E41F880E687</string>
+				<string>3C45671BE1F78449C29BBEA6C0CFD74F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DDA974030A3A38BD08FD8433F21ED580</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D319701529DA568EAB5DE43958470D25</string>
+				<string>63195D81C6D72F0D9B53B0AD877324F7</string>
+				<string>58EA85215754DE9DE4CC8325908DC941</string>
+				<string>C8287018E884D1A4044D60D67AD3DDEE</string>
+				<string>E9E81D8690F0874042CBEBBA24585843</string>
+				<string>363D15B3F1CF9511E02FEF20D9D059BC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/JKNotificationPanel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E3A77DD8B09C63E122FCA411262D3674</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F8DE4A56615687CE9759375FEF372987</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPad/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPad/Pods-JKNotificationPanel-iPad.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JKNotificationPanel_iPad</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E71A73F910ECE5F80E9A7F89B1EA2219</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09FA61DC9E293847C8A8E6A30504ED89</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E72B281E632E5F6514982C4764C906F2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>547A20F2E30F5E2BE12A056A67428E8C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPhone/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-JKNotificationPanel-iPhone/Pods-JKNotificationPanel-iPhone.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_JKNotificationPanel_iPhone</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E7713856DA03A5F7787D92F9C578D67D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BEF53A4F49811876CC87E62C95C29490</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E8246FDD2889F61A41E783C022881A3D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8D10B29BE28EE9CACC6A530849616118</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E82B434704C0C1D99D251F2220DD0398</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F678928BF5E8AB1E8B637700F78A7688</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E86F31F0AA2EBC86364D402FC76A9A19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E8FB9C22833DBADB996C1B3D09307FB3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>success-icon@3x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9E81D8690F0874042CBEBBA24585843</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>JKNotificationPanel-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA9FBB252A40C8067005AECCBA9F7933</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>JKDefaultView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EAF7306DDDFD628F4CFD2C17562339BE</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3179C14DCD29E38F314CBD193B6AB531</string>
+				<string>E72B281E632E5F6514982C4764C906F2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>EDE479A152DFBF7CB3D76349753CD0A2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A20A949FF7B910EAA8ADC15B426CDB27</string>
+				<string>3DD2AF97C5B600A257E0FF8CDE08D0AD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F470CC3C539977F6CD9B53784079BED6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>882CA21738242BF16719C9C4367951D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F678928BF5E8AB1E8B637700F78A7688</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4DF73ACC85C4612DC68B07D333082A68</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F6E9A8B97990BCBDD4EF6248C58092FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F77281FAE0BB8EBC165DA419E1F0B2E1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_JKNotificationPanel_iPad.framework</string>
+			<key>path</key>
+			<string>Pods_JKNotificationPanel_iPad.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F8DE4A56615687CE9759375FEF372987</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPad.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA00C9F66662C42C78430514A5B2BF2A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>46854D0113BEC249BDF1E72D3D0D50F2</string>
+				<string>9352F0D663C5C15FBD866CF015B9E71B</string>
+				<string>FCFB82DCC9BBCCDBD0920325680B5900</string>
+				<string>8B2411B79D39272D196429629C7A23C5</string>
+				<string>F6E9A8B97990BCBDD4EF6248C58092FD</string>
+				<string>84292767ECF5E6E53AD90D089DE0130A</string>
+				<string>E86F31F0AA2EBC86364D402FC76A9A19</string>
+				<string>4DF73ACC85C4612DC68B07D333082A68</string>
+				<string>63147E55DF38C6AB90D9B7BDBB20D3EC</string>
+				<string>547A20F2E30F5E2BE12A056A67428E8C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-JKNotificationPanel-iPhone</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-JKNotificationPanel-iPhone</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FCFB82DCC9BBCCDBD0920325680B5900</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-JKNotificationPanel-iPhone-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD7671D77407889180194330F5BA6FBE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>84EB2BF0260230DE45AE9C7535CF1AA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

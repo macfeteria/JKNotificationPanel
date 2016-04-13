@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3375767B3AA45EBC6D3E6051 /* Pods_JKNotificationPanel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1833DE5958AB7DBC01CAC9B7 /* Pods_JKNotificationPanel_Example.framework */; };
 		4C419B7CC980CDA30AF14994 /* Pods_JKNotificationPanel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69085F21A80D1223D08E36C /* Pods_JKNotificationPanel_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A1528258E3973C8A4053B0ED /* Pods_JKNotificationPanel_iPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437BDF5C5A76E7839C63C9EB /* Pods_JKNotificationPanel_iPad.framework */; };
+		D75A32CD1CBEA6F40052F934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A32CC1CBEA6F40052F934 /* AppDelegate.swift */; };
+		D75A32CF1CBEA6F40052F934 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A32CE1CBEA6F40052F934 /* MasterViewController.swift */; };
+		D75A32D11CBEA6F40052F934 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A32D01CBEA6F40052F934 /* DetailViewController.swift */; };
+		D75A32D41CBEA6F40052F934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75A32D21CBEA6F40052F934 /* Main.storyboard */; };
+		D75A32D61CBEA6F40052F934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75A32D51CBEA6F40052F934 /* Assets.xcassets */; };
+		D75A32D91CBEA6F40052F934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75A32D71CBEA6F40052F934 /* LaunchScreen.storyboard */; };
+		D75A32E01CBEAE710052F934 /* CustomNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75A32DE1CBEAE710052F934 /* CustomNotificationView.xib */; };
+		D75A32E11CBEAEB00052F934 /* CustomNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D77C001C27003500C3DE17 /* CustomNotificationView.xib */; };
 		D7D77C011C27003500C3DE17 /* CustomNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D77C001C27003500C3DE17 /* CustomNotificationView.xib */; };
 		D7D77C031C27005500C3DE17 /* JKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D77C021C27005500C3DE17 /* JKViewController.swift */; };
+		FFC17B2442122F29AB5EDE7D /* Pods_JKNotificationPanel_iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E721CDD07E731258AF70A397 /* Pods_JKNotificationPanel_iPhone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +42,11 @@
 		0E56E931DBD3305D3FAE094B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		15DBDBCB42B5DAF105CC8117 /* JKNotificationPanel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKNotificationPanel.podspec; path = ../JKNotificationPanel.podspec; sourceTree = "<group>"; };
 		1833DE5958AB7DBC01CAC9B7 /* Pods_JKNotificationPanel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E089A65BB33DA525BE1594 /* Pods-JKNotificationPanel-iPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel-iPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel-iPad/Pods-JKNotificationPanel-iPad.release.xcconfig"; sourceTree = "<group>"; };
+		2B4920E3054D396F6499B049 /* Pods-JKNotificationPanel-iPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel-iPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel-iPad/Pods-JKNotificationPanel-iPad.debug.xcconfig"; sourceTree = "<group>"; };
 		2E8548C7F2C7087D46FE97E6 /* Pods-JKNotificationPanel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* JKNotificationPanel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKNotificationPanel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		437BDF5C5A76E7839C63C9EB /* Pods_JKNotificationPanel_iPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_iPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* JKNotificationPanel-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JKNotificationPanel-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,11 +56,23 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6141925D15980D692A1FBB4F /* Pods-JKNotificationPanel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7817EE52E0CA3AE7F5996C13 /* Pods-JKNotificationPanel-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel-iPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel-iPhone/Pods-JKNotificationPanel-iPhone.release.xcconfig"; sourceTree = "<group>"; };
+		81D2B64A0956A8365EA75A8E /* Pods-JKNotificationPanel-iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel-iPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel-iPhone/Pods-JKNotificationPanel-iPhone.debug.xcconfig"; sourceTree = "<group>"; };
 		B69085F21A80D1223D08E36C /* Pods_JKNotificationPanel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FEF13A469988D3E929E8D7 /* Pods-JKNotificationPanel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNotificationPanel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D5004BF8DD1A1222BE345C29 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D75A32CA1CBEA6F40052F934 /* JKNotificationPanel-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JKNotificationPanel-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75A32CC1CBEA6F40052F934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D75A32CE1CBEA6F40052F934 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		D75A32D01CBEA6F40052F934 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D75A32D31CBEA6F40052F934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D75A32D51CBEA6F40052F934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D75A32D81CBEA6F40052F934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D75A32DA1CBEA6F40052F934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75A32DF1CBEAE710052F934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CustomNotificationView.xib; sourceTree = "<group>"; };
 		D7D77C001C27003500C3DE17 /* CustomNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNotificationView.xib; sourceTree = "<group>"; };
 		D7D77C021C27005500C3DE17 /* JKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKViewController.swift; sourceTree = "<group>"; };
+		E721CDD07E731258AF70A397 /* Pods_JKNotificationPanel_iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNotificationPanel_iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3375767B3AA45EBC6D3E6051 /* Pods_JKNotificationPanel_Example.framework in Frameworks */,
+				FFC17B2442122F29AB5EDE7D /* Pods_JKNotificationPanel_iPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D75A32C71CBEA6F40052F934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1528258E3973C8A4053B0ED /* Pods_JKNotificationPanel_iPad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +108,8 @@
 			children = (
 				1833DE5958AB7DBC01CAC9B7 /* Pods_JKNotificationPanel_Example.framework */,
 				B69085F21A80D1223D08E36C /* Pods_JKNotificationPanel_Tests.framework */,
+				437BDF5C5A76E7839C63C9EB /* Pods_JKNotificationPanel_iPad.framework */,
+				E721CDD07E731258AF70A397 /* Pods_JKNotificationPanel_iPhone.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,7 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for JKNotificationPanel */,
+				607FACD21AFB9204008FA782 /* Example JKNotificationPanel (iPhone) */,
+				D75A32CB1CBEA6F40052F934 /* Example JKNotificationPanel (iPad) */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				7C01B39DC284EB991419CA32 /* Pods */,
@@ -95,13 +130,14 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* JKNotificationPanel_Example.app */,
+				607FACD01AFB9204008FA782 /* JKNotificationPanel-iPhone.app */,
 				607FACE51AFB9204008FA782 /* JKNotificationPanel_Tests.xctest */,
+				D75A32CA1CBEA6F40052F934 /* JKNotificationPanel-iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for JKNotificationPanel */ = {
+		607FACD21AFB9204008FA782 /* Example JKNotificationPanel (iPhone) */ = {
 			isa = PBXGroup;
 			children = (
 				D7D77C021C27005500C3DE17 /* JKViewController.swift */,
@@ -112,7 +148,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for JKNotificationPanel";
+			name = "Example JKNotificationPanel (iPhone)";
 			path = JKNotificationPanel;
 			sourceTree = "<group>";
 		};
@@ -158,16 +194,36 @@
 				055BA921B000E0FB4F38A02E /* Pods-JKNotificationPanel_Example.release.xcconfig */,
 				2E8548C7F2C7087D46FE97E6 /* Pods-JKNotificationPanel_Tests.debug.xcconfig */,
 				D2FEF13A469988D3E929E8D7 /* Pods-JKNotificationPanel_Tests.release.xcconfig */,
+				2B4920E3054D396F6499B049 /* Pods-JKNotificationPanel-iPad.debug.xcconfig */,
+				19E089A65BB33DA525BE1594 /* Pods-JKNotificationPanel-iPad.release.xcconfig */,
+				81D2B64A0956A8365EA75A8E /* Pods-JKNotificationPanel-iPhone.debug.xcconfig */,
+				7817EE52E0CA3AE7F5996C13 /* Pods-JKNotificationPanel-iPhone.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D75A32CB1CBEA6F40052F934 /* Example JKNotificationPanel (iPad) */ = {
+			isa = PBXGroup;
+			children = (
+				D75A32DE1CBEAE710052F934 /* CustomNotificationView.xib */,
+				D75A32CC1CBEA6F40052F934 /* AppDelegate.swift */,
+				D75A32CE1CBEA6F40052F934 /* MasterViewController.swift */,
+				D75A32D01CBEA6F40052F934 /* DetailViewController.swift */,
+				D75A32D21CBEA6F40052F934 /* Main.storyboard */,
+				D75A32D51CBEA6F40052F934 /* Assets.xcassets */,
+				D75A32D71CBEA6F40052F934 /* LaunchScreen.storyboard */,
+				D75A32DA1CBEA6F40052F934 /* Info.plist */,
+			);
+			name = "Example JKNotificationPanel (iPad)";
+			path = "JKNotificationPanel-iPad";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* JKNotificationPanel_Example */ = {
+		607FACCF1AFB9204008FA782 /* JKNotificationPanel-iPhone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKNotificationPanel_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKNotificationPanel-iPhone" */;
 			buildPhases = (
 				BC14A1D8955DBF07B0D29391 /* Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -180,9 +236,9 @@
 			);
 			dependencies = (
 			);
-			name = JKNotificationPanel_Example;
+			name = "JKNotificationPanel-iPhone";
 			productName = JKNotificationPanel;
-			productReference = 607FACD01AFB9204008FA782 /* JKNotificationPanel_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* JKNotificationPanel-iPhone.app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* JKNotificationPanel_Tests */ = {
@@ -206,13 +262,33 @@
 			productReference = 607FACE51AFB9204008FA782 /* JKNotificationPanel_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D75A32C91CBEA6F40052F934 /* JKNotificationPanel-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75A32DD1CBEA6F40052F934 /* Build configuration list for PBXNativeTarget "JKNotificationPanel-iPad" */;
+			buildPhases = (
+				D91C30ABDF5B22A4336F6B71 /* Check Pods Manifest.lock */,
+				D75A32C61CBEA6F40052F934 /* Sources */,
+				D75A32C71CBEA6F40052F934 /* Frameworks */,
+				D75A32C81CBEA6F40052F934 /* Resources */,
+				BA8BB1AC89F462C1E516DF74 /* Embed Pods Frameworks */,
+				E44821F5215A014CD15861D5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JKNotificationPanel-iPad";
+			productName = "JKNotificationPanel-iPad";
+			productReference = D75A32CA1CBEA6F40052F934 /* JKNotificationPanel-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -222,6 +298,9 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					D75A32C91CBEA6F40052F934 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -238,7 +317,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* JKNotificationPanel_Example */,
+				607FACCF1AFB9204008FA782 /* JKNotificationPanel-iPhone */,
+				D75A32C91CBEA6F40052F934 /* JKNotificationPanel-iPad */,
 				607FACE41AFB9204008FA782 /* JKNotificationPanel_Tests */,
 			);
 		};
@@ -253,6 +333,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				D75A32E01CBEAE710052F934 /* CustomNotificationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +341,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75A32C81CBEA6F40052F934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75A32E11CBEAEB00052F934 /* CustomNotificationView.xib in Resources */,
+				D75A32D91CBEA6F40052F934 /* LaunchScreen.storyboard in Resources */,
+				D75A32D61CBEA6F40052F934 /* Assets.xcassets in Resources */,
+				D75A32D41CBEA6F40052F934 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +403,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Tests/Pods-JKNotificationPanel_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BA8BB1AC89F462C1E516DF74 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel-iPad/Pods-JKNotificationPanel-iPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BC14A1D8955DBF07B0D29391 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,7 +445,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel-iPhone/Pods-JKNotificationPanel-iPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D91C30ABDF5B22A4336F6B71 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E44821F5215A014CD15861D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel-iPad/Pods-JKNotificationPanel-iPad-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F90CFD70D709F4D71D1E38B7 /* Copy Pods Resources */ = {
@@ -353,7 +490,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel_Example/Pods-JKNotificationPanel_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKNotificationPanel-iPhone/Pods-JKNotificationPanel-iPhone-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -376,12 +513,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D75A32C61CBEA6F40052F934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75A32D11CBEA6F40052F934 /* DetailViewController.swift in Sources */,
+				D75A32CF1CBEA6F40052F934 /* MasterViewController.swift in Sources */,
+				D75A32CD1CBEA6F40052F934 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* JKNotificationPanel_Example */;
+			target = 607FACCF1AFB9204008FA782 /* JKNotificationPanel-iPhone */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -401,6 +548,30 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D75A32D21CBEA6F40052F934 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75A32D31CBEA6F40052F934 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D75A32D71CBEA6F40052F934 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75A32D81CBEA6F40052F934 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D75A32DE1CBEAE710052F934 /* CustomNotificationView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75A32DF1CBEAE710052F934 /* Base */,
+			);
+			name = CustomNotificationView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -489,7 +660,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6141925D15980D692A1FBB4F /* Pods-JKNotificationPanel_Example.debug.xcconfig */;
+			baseConfigurationReference = 81D2B64A0956A8365EA75A8E /* Pods-JKNotificationPanel-iPhone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKNotificationPanel/Info.plist;
@@ -497,12 +668,13 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macfeteria.jkpanel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 055BA921B000E0FB4F38A02E /* Pods-JKNotificationPanel_Example.release.xcconfig */;
+			baseConfigurationReference = 7817EE52E0CA3AE7F5996C13 /* Pods-JKNotificationPanel-iPhone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKNotificationPanel/Info.plist;
@@ -510,6 +682,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.macfeteria.jkpanel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -549,6 +722,38 @@
 			};
 			name = Release;
 		};
+		D75A32DB1CBEA6F40052F934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4920E3054D396F6499B049 /* Pods-JKNotificationPanel-iPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "JKNotificationPanel-iPad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macfeteria.jkpanel-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D75A32DC1CBEA6F40052F934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E089A65BB33DA525BE1594 /* Pods-JKNotificationPanel-iPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "JKNotificationPanel-iPad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.macfeteria.jkpanel-ipad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,7 +766,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKNotificationPanel_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKNotificationPanel-iPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -575,6 +780,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75A32DD1CBEA6F40052F934 /* Build configuration list for PBXNativeTarget "JKNotificationPanel-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75A32DB1CBEA6F40052F934 /* Debug */,
+				D75A32DC1CBEA6F40052F934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
