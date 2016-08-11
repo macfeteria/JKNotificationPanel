@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "JKNotificationPanel-iPhone.app"
-               BlueprintName = "JKNotificationPanel-iPhone"
-               ReferencedContainer = "container:JKNotificationPanel.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D78794E01D5CFC4500CB4228"
-               BuildableName = "JKNotificationPanel_Tests.xctest"
-               BlueprintName = "JKNotificationPanel_Tests"
+               BlueprintIdentifier = "D75A32C91CBEA6F40052F934"
+               BuildableName = "JKNotificationPanel-iPad.app"
+               BlueprintName = "JKNotificationPanel-iPad"
                ReferencedContainer = "container:JKNotificationPanel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D78794E01D5CFC4500CB4228"
-               BuildableName = "JKNotificationPanel_Tests.xctest"
-               BlueprintName = "JKNotificationPanel_Tests"
-               ReferencedContainer = "container:JKNotificationPanel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "JKNotificationPanel-iPhone.app"
-            BlueprintName = "JKNotificationPanel-iPhone"
+            BlueprintIdentifier = "D75A32C91CBEA6F40052F934"
+            BuildableName = "JKNotificationPanel-iPad.app"
+            BlueprintName = "JKNotificationPanel-iPad"
             ReferencedContainer = "container:JKNotificationPanel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -79,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "JKNotificationPanel-iPhone.app"
-            BlueprintName = "JKNotificationPanel-iPhone"
+            BlueprintIdentifier = "D75A32C91CBEA6F40052F934"
+            BuildableName = "JKNotificationPanel-iPad.app"
+            BlueprintName = "JKNotificationPanel-iPad"
             ReferencedContainer = "container:JKNotificationPanel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -98,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "JKNotificationPanel-iPhone.app"
-            BlueprintName = "JKNotificationPanel-iPhone"
+            BlueprintIdentifier = "D75A32C91CBEA6F40052F934"
+            BuildableName = "JKNotificationPanel-iPad.app"
+            BlueprintName = "JKNotificationPanel-iPad"
             ReferencedContainer = "container:JKNotificationPanel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

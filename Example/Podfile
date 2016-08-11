@@ -1,16 +1,14 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'JKNotificationPanel-iPhone', :exclusive => true do
+target 'JKNotificationPanel-iPhone' do
   pod "JKNotificationPanel", :path => "../"
 end
 
-target 'JKNotificationPanel-iPad', :exclusive => true do
+target 'JKNotificationPanel-iPad' do
   pod "JKNotificationPanel", :path => "../"
 end
 
-target 'JKNotificationPanel_Tests', :exclusive => true do
+target 'JKNotificationPanel_Tests' do
   pod "JKNotificationPanel", :path => "../"
-
-
 end
