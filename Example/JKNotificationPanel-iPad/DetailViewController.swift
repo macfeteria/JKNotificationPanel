@@ -29,40 +29,40 @@ class DetailViewController: UIViewController,JKNotificationPanelDelegate {
             
         // Success
         case 0:
-            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!)
+            panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!)
             
         // Custom color
         case 1:
-            let view = panel.defaultView(.SUCCESS, message: nil)
+            let view = panel.createDefaultView(withStatus: .success, title: nil)
             view.setColor(UIColor(red: 67.0/255.0, green: 69.0/255.0, blue: 80.0/255.0, alpha: 1))
             panel.showNotify(withView: view, belowNavigation: self.navigationController!)
             
         // Warning
         case 2:
-            panel.showNotify(withStatus: .WARNING, belowNavigation: self.navigationController!)
+            panel.showNotify(withStatus: .warning, belowNavigation: self.navigationController!)
             
         // Failed
         case 3:
-            panel.showNotify(withStatus: .FAILED, belowNavigation: self.navigationController!)
+            panel.showNotify(withStatus: .failed, belowNavigation: self.navigationController!)
             
         // Long Text
         case 4:
             let longtext = "This is the very long text \"Offline Mode: Detailed product information, images and datasheets are not available when offline.\""
-            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: longtext)
+            panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: longtext)
             
         // Custom View
         case 5:
-            let nib = UINib(nibName: "CustomNotificationView", bundle: NSBundle(forClass: self.dynamicType))
-            let customView  = nib.instantiateWithOwner(nil, options: nil).first as! UIView
-            let width:CGFloat = UIScreen.mainScreen().bounds.size.width
-            customView.frame = CGRectMake(0, 0, width, 42)
+            let nib = UINib(nibName: "CustomNotificationView", bundle: Bundle(for: type(of: self)))
+            let customView  = nib.instantiate(withOwner: nil, options: nil).first as! UIView
+            let width:CGFloat = UIScreen.main.bounds.size.width
+            customView.frame = CGRect(x: 0, y: 0, width: width, height: 42)
             panel.showNotify(withView: customView, belowNavigation: self.navigationController!)
             
         // Wait until tap
         case 6:
             panel.timeUntilDismiss = 0 // zero for wait forever
             panel.enableTapDismiss = true
-            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to dissmiss")
+            panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: "Tap me to dissmiss")
             
         // On the top of table view
         case 7:
@@ -71,46 +71,55 @@ class DetailViewController: UIViewController,JKNotificationPanelDelegate {
         // On navigation
         case 8:
             let navView = self.navigationController?.view
-            panel.showNotify(withStatus: .SUCCESS, inView: navView!)
+            panel.showNotify(withStatus: .success, inView: navView!)
             
         // Delegate
         case 9:
             panel.delegate = self
-            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Alert after notifying done (Delegate style)")
+            panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: "Alert after notifying done (Delegate style)")
             
         // Completion block
         case 10:
             
             panel.timeUntilDismiss = 0
             panel.enableTapDismiss = false
-            panel.addPanelDidTapAction() {
+            panel.setPanelDidTapAction() {
                 self.notificationPanelDidTap()
             }
-            panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tab me to show alert")
+            panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: "Tab me to show alert")
             
         // Custom Image
         case 11:
-            let view = panel.defaultView(.SUCCESS, message: "Success panel with custom Image and text")
+            let view = panel.createDefaultView(withStatus: .success, title: "Success panel with custom Image and text")
             view.setImage(UIImage(named: "airplane-icon")!)
             panel.showNotify(withView: view, belowNavigation: self.navigationController!)
+            
+        // Subtitle
+        case 12:
+            
+            panel.timeUntilDismiss = 0
+            let message = "This is the very long text \"Offline Mode: Detailed product information, images and datasheets are not available when offline.\""
+            let view =  panel.createSubtitleView(withStatus: .warning, title: "Not Enough space", message: message)
+            view.setImage(UIImage(named: "airplane-icon")!)
+            panel.showNotify(withView: view, belowNavigation: self.navigationController!)
+    
             
         default: break
         }
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         print("frame \(self.view.frame.size)")
     }
     
     
     // Support oritation
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
-        
-        coordinator.animateAlongsideTransition({ (context) in
-            self.panel.transitionToSize(self.view.frame.size)
-            }, completion: nil)
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: ({ _ in
+            self.panel.transitionTo(size: self.view.frame.size)
+        }))
     }
     
     
@@ -129,33 +138,31 @@ class DetailViewController: UIViewController,JKNotificationPanelDelegate {
     // Delegate
     
     func notificationPanelDidTap() {
-        let alert = UIAlertController(title: "Hello!!", message: "This is an example of how to work with completion block.", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (alert) -> Void in
+        let alert = UIAlertController(title: "Hello!!", message: "This is an example of how to work with completion block.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (alert) -> Void in
             
             // Since alertview take 0.2 to dismiss, therefor fade animate must
             // longer than 0.2
             
-            self.panel.dismissNotify(0.4)
+            self.panel.dismiss(withFadeDuration: 0.4)
         }))
         
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func notificationPanelDidDismiss() {
-        
-        let alert = UIAlertController(title: "Nofity Completed", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
-        
+        presentAlert ()
     }
     
     func notifyCompleted() {
-        let alert = UIAlertView()
-        alert.title = "Nofity Completed"
-        alert.addButtonWithTitle("Ok")
-        alert.show()
+       presentAlert()
     }
     
+    func presentAlert() {
+        let alert = UIAlertController(title: "Nofity Completed", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     
 }

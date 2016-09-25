@@ -36,14 +36,15 @@ class MasterViewController: UITableViewController {
         demoList.append("Delegate")
         demoList.append("Completion and Alert")
         demoList.append("Success with custom Image and Text")
+        demoList.append("Subtitle")
         
-        let header = self.tableView.dequeueReusableCellWithIdentifier("header")
+        let header = self.tableView.dequeueReusableCell(withIdentifier: "header")
         header?.textLabel?.text = "JKNotificationPanel"
         self.tableView.tableHeaderView = header
         
         if let split = self.splitViewController {
             
-            split.preferredDisplayMode = UISplitViewControllerDisplayMode.AllVisible
+            split.preferredDisplayMode = UISplitViewControllerDisplayMode.allVisible
             
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
@@ -51,8 +52,8 @@ class MasterViewController: UITableViewController {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
+    override func viewWillAppear(_ animated: Bool) {
+        self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
     
@@ -64,12 +65,12 @@ class MasterViewController: UITableViewController {
     
     // MARK: - Segues
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.index = indexPath.row
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                controller.index = (indexPath as NSIndexPath).row
+                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
@@ -77,27 +78,27 @@ class MasterViewController: UITableViewController {
     
     // MARK: - Table View
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return demoList.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = demoList[indexPath.row]
+        cell.textLabel?.text = demoList[(indexPath as NSIndexPath).row]
         return cell
         
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.row == 7 {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath as NSIndexPath).row == 7 {
             panel.timeUntilDismiss = 2
             let text = "The Panel display on the top of the table (MasterView)"
-            panel.showNotify(withStatus: .WARNING, inView:self.tableView, message: text)
+            panel.showNotify(withStatus: .warning, inView:self.tableView, title: text)
 
         }
     }

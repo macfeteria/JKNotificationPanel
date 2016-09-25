@@ -14,13 +14,13 @@ public protocol JKNotificationPanelDelegate {
     func notificationPanelDidTap()
 }
 
-public class JKNotificationPanel: NSObject {
+open class JKNotificationPanel: NSObject {
     
     let defaultViewHeight:CGFloat = 42.0
 
-    public var enableTapDismiss = true
-    public var timeUntilDismiss:NSTimeInterval = 2
-    public var delegate:JKNotificationPanelDelegate!
+    open var enableTapDismiss = true
+    open var timeUntilDismiss:TimeInterval = 2
+    open var delegate:JKNotificationPanelDelegate!
     
     var tapAction:(()->Void)? = nil
     var dismissAction:(()->Void)? = nil
@@ -37,73 +37,100 @@ public class JKNotificationPanel: NSObject {
         super.init()
    }
     
-    public func transitionToSize(size:CGSize) {
-        
-        if let jkview = self.withView as? JKDefaultView {
-            jkview.transitionTosize(size)
-        }
-        
-        if let navBar  = self.navigationBar , let view = self.view {
-            let navHeight = navBar.frame.height + UIApplication.sharedApplication().statusBarFrame.size.height
-            verticalSpace = navHeight
-            view.frame = CGRectMake(0, self.verticalSpace, view.frame.width, view.frame.height)
-        }
-    }
     
-    
-    public func defaultView(status:JKType, message:String?, size:CGSize? = nil) -> JKDefaultView {
-        
+    fileprivate func frameRect(_ size:CGSize? = nil) -> CGRect {
         var height:CGFloat = defaultViewHeight
-        var width:CGFloat = UIScreen.mainScreen().bounds.size.width
+        var width:CGFloat = UIScreen.main.bounds.size.width
         
         if let size = size {
             height = size.height
             width = size.width
         }
         
-        let view = JKDefaultView(frame: CGRectMake(0, 0, width,  height))
-        view.setPanelStatus(status)
-        view.setMessage(message)
+        return CGRect(x: 0, y: 0, width: width,  height: height)
         
+    }
+    
+    open func transitionTo(size:CGSize) {
+        
+        if let jkview = self.withView as? JKDefaultView {
+            jkview.transitionTo(size: size)
+        }
+        
+        if let jkSubview = self.withView as? JKSubtitleView {
+            jkSubview.transitionTo(size: size)
+        }
+        
+        if let navBar  = self.navigationBar , let view = self.view {
+            let navHeight = navBar.frame.height + UIApplication.shared.statusBarFrame.size.height
+            verticalSpace = navHeight
+            view.frame = CGRect(x: 0, y: self.verticalSpace, width: view.frame.width, height: view.frame.height)
+        }
+    }
+    
+    
+    open func createDefaultView(withStatus:JKStatus, title:String?, size:CGSize? = nil) -> JKDefaultView {
+        let view = JKDefaultView(frame: frameRect(size))
+        view.setPanelStatus(withStatus)
+        view.setTitle(title)
         return view
     }
 
+
+    open func createSubtitleView(withStatus:JKStatus, title:String?, message:String?, size:CGSize? = nil) -> JKSubtitleView {
+        let view = JKSubtitleView(frame: frameRect(size))
+        view.setPanelStatus(withStatus)
+        view.setTitle(title)
+        view.setMessage(message)
+        return view
+    }
     
-    public func addPanelDidTapAction(action:()->Void ) {
+    open func setPanelDidTapAction(_ action:@escaping ()->Void ) {
         tapAction = action
     }
     
-    public func addPanelDidDissmissAction(action:()->Void ) {
+    open func setPanelDidDissmissAction(_ action:@escaping ()->Void ) {
         dismissAction  = action
     }
     
-    
-    public func showNotify(withStatus status: JKType, belowNavigation navigation: UINavigationController, message text:String? = nil) {
+    open func showNotify(withStatus status: JKStatus, belowNavigation navigation: UINavigationController, title:String? = nil , message:String? = nil) {
         navigationBar = navigation.navigationBar
-        verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
+        verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.shared.statusBarFrame.size.height
         let panelSize = CGSize(width: navigation.navigationBar.frame.size.width, height: defaultViewHeight)
-        let defaultView = self.defaultView(status,message: text,size: panelSize)
-        self.showNotify(withView: defaultView, inView: navigation.view)
+
+        if let message = message {
+            let subtitleView = self.createSubtitleView(withStatus: status, title: title, message: message)
+            self.showNotify(withView: subtitleView, inView: navigation.view)
+        } else {
+            let defaultView = self.createDefaultView(withStatus: status, title: title, size: panelSize)
+            self.showNotify(withView: defaultView, inView: navigation.view)
+        }
     }
     
-    public func showNotify(withStatus status: JKType, inView view: UIView, message text:String? = nil) {
+
+    
+    open func showNotify(withStatus status: JKStatus, inView view: UIView, title:String? = nil , message:String? = nil) {
         
         verticalSpace = 0
         let panelSize = CGSize(width: view.frame.size.width, height: defaultViewHeight)
-        let defaultView = self.defaultView(status,message: text,size: panelSize)
-        self.showNotify(withView: defaultView, inView: view)
+        
+        if let message = message {
+            let subtitleView = self.createSubtitleView(withStatus: status, title: title, message: message)
+            self.showNotify(withView: subtitleView, inView: view)
+        }
+        else {
+            let defaultView = self.createDefaultView(withStatus: status,title: title,size: panelSize)
+            self.showNotify(withView: defaultView, inView: view)
+        }
     }
     
-    
-    
-    public func showNotify(withView view: UIView,  belowNavigation navigation: UINavigationController , completion handler:(()->Void)? = nil) {
+    open func showNotify(withView view: UIView,  belowNavigation navigation: UINavigationController , completion handler:(()->Void)? = nil) {
         navigationBar = navigation.navigationBar
-        verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.sharedApplication().statusBarFrame.size.height
+        verticalSpace = navigation.navigationBar.frame.size.height + UIApplication.shared.statusBarFrame.size.height
         self.showNotify(withView: view, inView: navigation.view )
     }
     
-    public func showNotify(withView view: UIView,inView: UIView) {
-        
+    open func showNotify(withView view: UIView, inView: UIView) {
  
         reset()
  
@@ -119,56 +146,48 @@ public class JKNotificationPanel: NSObject {
         self.view.addGestureRecognizer(tapGesture)
         
         self.view.alpha = 1
-        self.view.frame = CGRectMake(0, top , width, height)
-        self.view.backgroundColor = UIColor.clearColor()
+        self.view.frame = CGRect(x: 0, y: top , width: width, height: height)
+        self.view.backgroundColor = UIColor.clear
         self.view.addSubview(view)
-        self.view.bringSubviewToFront(view)
-        view.autoresizingMask = [.FlexibleWidth]
-        self.view.autoresizingMask = [.FlexibleWidth]
+        self.view.bringSubview(toFront: view)
+        view.autoresizingMask = [.flexibleWidth]
+        self.view.autoresizingMask = [.flexibleWidth]
         inView.addSubview(self.view)
         
-        
         // Start Animate
-        
         let expandView = {
             self.view.alpha = 1
-            self.view.frame = CGRectMake(0, self.verticalSpace, width, height + 5)
+            self.view.frame = CGRect(x: 0, y: self.verticalSpace, width: width, height: height + 5)
         }
         
-        UIView.animateWithDuration(0.2, animations: expandView ) { (success) -> Void in
-            
+        UIView.animate(withDuration: 0.2, animations: expandView, completion: { (success) -> Void in
             guard (self.view != nil) else { return }
             
             let resizeViewToDefault = {
-                self.view.frame = CGRectMake(0, self.verticalSpace , width, height)
+                self.view.frame = CGRect(x: 0, y: self.verticalSpace , width: width, height: height)
             }
             
             let resizeViewToDefaultComplete = { (animateDone:Bool) -> Void in
                 if self.timeUntilDismiss > 0 {
-                    
                     let prepareFade = {
                         self.view.alpha = 0.8
                     }
-                    
                     let prepareFadeComplete = { (animateDone:Bool) -> Void in
                         if animateDone == true {
-                            self.animateFade(0.2)
+                            self.animate(withFadeDuration: 0.2)
                         }
                     }
-                    
-                    UIView.animateWithDuration(0.1, delay: self.timeUntilDismiss, options: .AllowUserInteraction, animations: prepareFade, completion: prepareFadeComplete)
+                    UIView.animate(withDuration: 0.1, delay: self.timeUntilDismiss, options: .allowUserInteraction, animations: prepareFade, completion: prepareFadeComplete)
                 }
             }
-            
-            UIView.animateWithDuration(0.2, animations: resizeViewToDefault , completion: resizeViewToDefaultComplete )
-        }
-        
+            UIView.animate(withDuration: 0.2, animations: resizeViewToDefault , completion: resizeViewToDefaultComplete )
+        })
     }
     
     
     func tapHandler () {
         if  enableTapDismiss ==   true {
-            self.dismissNotify()
+            self.dismiss(withFadeDuration: 0.2)
         }
         
         if let delegate = self.delegate {
@@ -189,7 +208,7 @@ public class JKNotificationPanel: NSObject {
     }
     
     
-    func animateFade(duration:NSTimeInterval) {
+    func animate(withFadeDuration fadeDuration:TimeInterval) {
         guard (self.view != nil) else {return}
         var frame = self.view.frame
         frame.size.height = -10
@@ -203,7 +222,7 @@ public class JKNotificationPanel: NSObject {
             self.removePanelFromSuperView()
         }
         
-        UIView.animateWithDuration(duration, animations: fade, completion: fadeComplete)
+        UIView.animate(withDuration: fadeDuration, animations: fade, completion: fadeComplete)
     }
     
     func removePanelFromSuperView() {
@@ -221,12 +240,12 @@ public class JKNotificationPanel: NSObject {
         }
     }
     
-    public func dismissNotify(fadeDuration:NSTimeInterval = 0.2) {
+    open func dismiss(withFadeDuration fadeDuration:TimeInterval) {
         if fadeDuration == 0 {
             removePanelFromSuperView()
         }
         else {
-            animateFade(fadeDuration)
+            animate(withFadeDuration: fadeDuration)
         }
     }
     
