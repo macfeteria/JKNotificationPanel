@@ -26,6 +26,8 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         demoList.append("Success with Custom color")
         demoList.append("Warning")
         demoList.append("Subtitle")
+        demoList.append("Subtitle with color")
+
         demoList.append("Failed")
         demoList.append("Long text")
         demoList.append("Custom View")
@@ -91,18 +93,26 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
         // Subtitle
         case 3:
             panel.showNotify(withStatus: .warning, belowNavigation: self.navigationController!, title: "Chelsea Football Club", message: "I have to solve the situation because every game we concede two goals minimum.' - Antonio Conte speaking after the game.")
+
+        // Subtitle with Custom color
+        case 4:
+            let view = panel.createSubtitleView(withStatus: .warning, title: "Chelsea Football Club", message: "I have to solve the situation because every game we concede two goals minimum.' - Antonio Conte speaking after the game.")
+            view.setColor(UIColor(red: 67.0/255.0, green: 69.0/255.0, blue: 80.0/255.0, alpha: 1))
+
+            panel.showNotify(withView: view, belowNavigation: self.navigationController!)
+    
             
         // Failed
-        case 4:
+        case 5:
             panel.showNotify(withStatus: .failed, belowNavigation: self.navigationController!)
         
         // Long Text
-        case 5:
+        case 6:
             let longtext = "Guus Hiddink meeting the Chelsea players after the game."
             panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: longtext)
         
         // Custom View
-        case 6:
+        case 7:
             let nib = UINib(nibName: "CustomNotificationView", bundle: Bundle(for: type(of: self)))
             let customView  = nib.instantiate(withOwner: nil, options: nil).first as! UIView
             let width:CGFloat = UIScreen.main.bounds.size.width
@@ -110,32 +120,33 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
             panel.showNotify(withView: customView, belowNavigation: self.navigationController!)
         
         // Wait until tap
-        case 7:
+        case 8:
             let text = "Tap me to dissmiss"
             panel.timeUntilDismiss = 0 // zero for wait forever
             panel.enableTapDismiss = true
             panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: text)
         
         // On the top of table view
-        case 8:
+        case 9:
             let text = "The Panel display on the top of the table, pull the table to see the result and tap the panel to dismiss"
             panel.timeUntilDismiss = 0
             panel.enableTapDismiss = true
             panel.showNotify(withStatus: .warning, inView:self.tableView, title: text)
+            
         
         // On navigation
-        case 9:
+        case 10:
             let navView = self.navigationController?.view
             panel.showNotify(withStatus: .success, inView: navView!)
         
         // Delegate
-        case 10:
+        case 11:
             let text = "Alert after notifying done (Delegate style)"
             panel.delegate = self
             panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: text)
         
         // Completion block
-        case 11:
+        case 12:
             let text = "Tab me to show alert"
             panel.timeUntilDismiss = 0
             panel.enableTapDismiss = false
@@ -145,7 +156,7 @@ class JKViewController: UIViewController,JKNotificationPanelDelegate {
             panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: text)
 
         // Custom Image
-        case 12:
+        case 13:
             let view = panel.createDefaultView(withStatus: .success, title: "Success panel with custom Image and text")
             view.setImage(UIImage(named: "airplane-icon")!)
             panel.showNotify(withView: view, belowNavigation: self.navigationController!)

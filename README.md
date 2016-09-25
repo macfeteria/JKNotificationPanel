@@ -11,7 +11,7 @@ Simple, Customizable notification panel,
 
 ## Requirements
 
-- Swift 2.1
+- Swift 3 ( Swift 2.3 use version 0.2 )
 - Xcode 6
 - iOS 8.0 or above
 
@@ -46,20 +46,22 @@ let panel = JKNotificationPanel()
 ```
 ### Displaying the basic panel
 ```Swift
-panel.showNotify(withStatus: .SUCCESS, inView: self.view, message: "Success to upload all images.")
+panel.showNotify(withStatus: .success, inView: self.view, title: "Success to upload all images.")
 ```
 ### Displaying the panel below the navigation
 ```Swift
-panel.showNotify(withStatus: .FAILED, belowNavigation: self.navigationController!)
+panel.showNotify(withStatus: .warning, belowNavigation: self.navigationController!)
+```
+### Subtitle View
+```Swift
+panel.showNotify(withStatus: .warning, belowNavigation: self.navigationController!, title: "Chelsea Football Club", message: "Chelsea 4 - 2 Leicester")
 ```
 ### Custom View
 ```Swift
-let nib = UINib(nibName: "CustomNotificationView", bundle: NSBundle(forClass: self.dynamicType))
-
-let customView  = nib.instantiateWithOwner(nil, options: nil).first as! UIView
-let width:CGFloat = UIScreen.mainScreen().bounds.size.width
-customView.frame = CGRectMake(0, 0, width, 20)
-
+let nib = UINib(nibName: "CustomNotificationView", bundle: Bundle(for: type(of: self)))
+let customView  = nib.instantiate(withOwner: nil, options: nil).first as! UIView
+let width:CGFloat = UIScreen.main.bounds.size.width
+customView.frame = CGRect(x: 0, y: 0, width: width, height: 42)
 panel.showNotify(withView: customView, belowNavigation: self.navigationController!)
 ```
 
@@ -67,7 +69,7 @@ panel.showNotify(withView: customView, belowNavigation: self.navigationControlle
 ```Swift
 panel.timeUntilDismiss = 0 // zero for wait forever
 panel.enableTapDismiss = true
-panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to dismiss")
+panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: "Tap me to dismiss")
 
 ```
 
@@ -86,17 +88,17 @@ panel.enableTapDismiss = false
 panel.addPanelDidTapAction() {
 self.notificationPanelDidTap()
 }
-panel.showNotify(withStatus: .SUCCESS, belowNavigation: self.navigationController!, message: "Tap me to show alert")
+panel.showNotify(withStatus: .success, belowNavigation: self.navigationController!, title: "Tap me to show alert")
 ```
 ### Orientation
 JKNotificationPanel support orientation. Just call method 'transitionToSize' in ViewController
 ```Swift
-override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+super.viewWillTransition(to: size, with: coordinator)
 
-  coordinator.animateAlongsideTransition({ (context) in
-    jkpanel.transitionToSize(self.view.frame.size)
-  }, completion: nil)
+coordinator.animate(alongsideTransition: { (context) in
+self.panel.transitionTo(size: self.view.frame.size)
+}, completion: nil)
 }
 
 ```
