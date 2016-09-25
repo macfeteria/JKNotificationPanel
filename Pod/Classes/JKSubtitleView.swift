@@ -36,7 +36,6 @@ open class JKSubtitleView: UIView {
         textLabel.isUserInteractionEnabled = true
         textLabel.textColor = UIColor.white
         
-        let subtitleLabelX = verticalSpace + iconSize + verticalSpace
         let subtitleLableY = textLabel.frame.origin.y + titleLableHeight
         subtitleLabel = UILabel(frame: CGRect(x: textLabelX, y: subtitleLableY, width: frame.width - textLabelX - horizontalSpace, height: subtitleLabelHeight))
         subtitleLabel.font = UIFont.systemFont(ofSize: 12)
@@ -108,7 +107,7 @@ open class JKSubtitleView: UIView {
         
         
         let subHeight = subtitleLabel.frame.height + 2
-        var subFrameHeight = (textLabel.frame.origin.y + textLabel.frame.height) + subHeight
+        let subFrameHeight = (textLabel.frame.origin.y + textLabel.frame.height) + subHeight
         self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: self.frame.width, height: subFrameHeight)
         baseView.frame = self.frame
         
