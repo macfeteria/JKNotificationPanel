@@ -169,12 +169,14 @@ open class JKNotificationPanel: NSObject {
             
             let resizeViewToDefaultComplete = { (animateDone:Bool) -> Void in
                 if self.timeUntilDismiss > 0 {
-                    let prepareFade = {
-                        self.view.alpha = 0.8
-                    }
-                    let prepareFadeComplete = { (animateDone:Bool) -> Void in
-                        if animateDone == true {
-                            self.animate(withFadeDuration: 0.2)
+                    if self.view != nil {
+                        let prepareFade = {
+                            self.view.alpha = 0.8
+                        }
+                        let prepareFadeComplete = { (animateDone:Bool) -> Void in
+                            if animateDone == true {
+                                self.animate(withFadeDuration: 0.2)
+                            }
                         }
                     }
                     UIView.animate(withDuration: 0.1, delay: self.timeUntilDismiss, options: .allowUserInteraction, animations: prepareFade, completion: prepareFadeComplete)
