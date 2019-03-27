@@ -149,7 +149,7 @@ open class JKNotificationPanel: NSObject {
         self.view.frame = CGRect(x: 0, y: top , width: width, height: height)
         self.view.backgroundColor = UIColor.clear
         self.view.addSubview(view)
-        self.view.bringSubview(toFront: view)
+        self.view.bringSubviewToFront(view)
         view.autoresizingMask = [.flexibleWidth]
         self.view.autoresizingMask = [.flexibleWidth]
         inView.addSubview(self.view)
@@ -185,7 +185,7 @@ open class JKNotificationPanel: NSObject {
     }
     
     
-    func tapHandler () {
+    @objc func tapHandler () {
         if  enableTapDismiss ==   true {
             self.dismiss(withFadeDuration: 0.2)
         }
